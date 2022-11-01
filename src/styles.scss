@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: rgb(153, 41, 190);
+    background: linear-gradient(49deg, rgba(153, 41, 190, 0.0844712885154062) 25%, rgba(240, 250, 243, 1) 89%, rgba(39, 210, 245, 0.12088585434173671) 100%) repeat-y;
+}
+
+// MenuBar PrimeNG Style Overwritting
+.p-menubar {
+    background: none!important;
+    border: none!important;
+}
+
+.fa-angular {
+    color: red!important;
+}
+
+//
+// Global Media Querys
+@media (max-width: 575px) {
+    body {
+        background: linear-gradient(80deg, rgba(153, 41, 190, 0.0844712885154062) 25%, rgba(240, 250, 243, 1) 89%, rgba(39, 210, 245, 0.12088585434173671) 100%) repeat-y;
+    }
+    .hidden-xs-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .hidden-sm-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-sm-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .hidden-md-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .hidden-md-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .hidden-lg-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hidden-lg-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-xl-up {
+        display: none !important;
+    }
+}
+
+.hidden-xl-down {
+    display: none !important;
+}
+
+.visible-print-block {
+    display: none !important;
+}
+
+@media print {
+    .visible-print-block {
+        display: block !important;
+    }
+}
+
+.visible-print-inline {
+    display: none !important;
+}
+
+@media print {
+    .visible-print-inline {
+        display: inline !important;
+    }
+}
+
+.visible-print-inline-block {
+    display: none !important;
+}
+
+@media print {
+    .visible-print-inline-block {
+        display: inline-block !important;
+    }
+}
+
+@media print {
+    .hidden-print {
+        display: none !important;
+    }
+}
