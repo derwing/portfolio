@@ -1,0 +1,57 @@
+.img-col {
+    // <a href='https://pngtree.com/so/download'>download png from pngtree.com/</a>
+    background-image: url('../../../assets/images/background-hero1.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 80px;
+}
+
+.text-col {
+    // <a href='https://pngtree.com/so/download'>download png from pngtree.com/</a>
+    background-image: url('../../../assets/images/background-hero2.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom-right-radius: 80px;
+}
+
+.img-hero {
+    width: 320px;
+    height: 495px;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        background-size: auto;
+    }
+    .col-offset-2 {
+        // margin-left: 0!important;
+    }
+    .img-col {
+        // text-align: left;
+    }
+    .img-hero {
+        width: 440px;
+        height: 525px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        // <a href='https://pngtree.com/so/download'>download png from pngtree.com/</a>
+        background-image: url('../../../assets/images/background2.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        margin: 0 2px;
+    }
+    .text-col {
+        background-image: none;
+    }
+    .text-col-info {
+        margin-left: 1.5rem;
+    }
+}

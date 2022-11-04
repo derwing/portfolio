@@ -2,7 +2,12 @@
 
 body {
     background: rgb(153, 41, 190);
-    background: linear-gradient(49deg, rgba(153, 41, 190, 0.0844712885154062) 25%, rgba(240, 250, 243, 1) 89%, rgba(39, 210, 245, 0.12088585434173671) 100%) repeat-y;
+    background: linear-gradient(46deg, rgba(153, 41, 190, 0.0844712885154062) 25%, rgba(240, 250, 243, 1) 89%, rgba(39, 210, 245, 0.12088585434173671) 100%);
+}
+
+img {
+    width: "40px";
+    height: "495px";
 }
 
 // MenuBar PrimeNG Style Overwritting
@@ -15,14 +20,23 @@ body {
     color: red!important;
 }
 
+// dark-mode
+body.dark-mode {
+    background: linear-gradient(89deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
 //
 // Global Media Querys
 @media (max-width: 575px) {
     body {
-        background: linear-gradient(80deg, rgba(153, 41, 190, 0.0844712885154062) 25%, rgba(240, 250, 243, 1) 89%, rgba(39, 210, 245, 0.12088585434173671) 100%) repeat-y;
+        background: linear-gradient(89deg, rgba(153, 41, 190, 0.0844712885154062) 25%, rgba(240, 250, 243, 1) 89%, rgba(39, 210, 245, 0.12088585434173671) 100%);
     }
     .hidden-xs-down {
         display: none !important;
+    }
+    // dark-mode
+    .body.darkmode {
+        background: linear-gradient(89deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
     }
 }
 

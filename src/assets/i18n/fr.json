@@ -1,0 +1,10 @@
+{
+    "navbar": {
+        "lets-talk": "let's Talk",
+        "menu": {
+            "home": "home",
+            "projects": "proyectos",
+            "education": "educación"
+        }
+    }
+}
