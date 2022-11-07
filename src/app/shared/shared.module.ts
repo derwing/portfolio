@@ -13,6 +13,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     PrimengModule,
     TranslateModule
   ],
-  exports: [NavbarComponent]
+  exports: [NavbarComponent, PrimengModule]
 })
 export class SharedModule { }

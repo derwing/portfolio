@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
+import { CardModule } from 'primeng/card';
+import { SkeletonModule } from 'primeng/skeleton';
 
 
 @NgModule({
@@ -11,6 +13,9 @@ import { BadgeModule } from 'primeng/badge';
   exports: [
     MenubarModule,
     ButtonModule,
-    BadgeModule]
+    BadgeModule,
+    CardModule,
+    SkeletonModule
+  ]
 })
 export class PrimengModule { }
