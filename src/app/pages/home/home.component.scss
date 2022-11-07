@@ -21,6 +21,11 @@
     height: 495px;
 }
 
+// card
+.text-webkit {
+    text-align: -webkit-center;
+}
+
 .img-card {
     width: 50%;
     margin: 10% 0;
@@ -118,5 +123,19 @@
     }
     .text-col-info {
         margin-left: 1.5rem;
+    }
+    .media-title,
+    p {
+        margin: 0;
+    }
+    .col-4 {
+        max-height: 70px;
+    }
+    .flip-card {
+        width: 100px;
+        height: 70px;
+        perspective: 1000px;
+        /* Remove this if you don't want the 3D effect */
+        font-size: 0.65rem;
     }
 }
