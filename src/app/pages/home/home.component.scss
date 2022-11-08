@@ -110,13 +110,15 @@
 @media (max-width: 768px) {
     .hero-content {
         // <a href='https://pngtree.com/so/download'>download png from pngtree.com/</a>
-        background-image: url('../../../assets/images/background2.png');
+        // background-image: url('../../../assets/images/background2Mobile.png');
         background-position: right;
         background-repeat: no-repeat;
-        background-size: cover;
+        // background-size: cover;
         border-top-left-radius: 80px;
         border-bottom-right-radius: 80px;
         margin: 0 2px;
+        background: rgba(51, 170, 153, .1)/*  10% opaque green */
+        ;
     }
     .text-col {
         background-image: none;
