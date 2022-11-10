@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ThemeService } from './../../services/theme.service';
+import { Component, DoCheck, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -6,14 +7,22 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, DoCheck {
   video: string = "ZVKmNJpmAZI"
+  darkMode: boolean = false;
 
   constructor(
-    private _sanitizer: DomSanitizer
+    private _sanitizer: DomSanitizer,
+    private ThemeService: ThemeService
   ) { }
 
   ngOnInit(): void {
+  }
+
+  ngDoCheck(): void {
+    if (this.darkMode != this.ThemeService.darkMode) {
+      this.darkMode = this.ThemeService.darkMode
+    }
   }
 
   getVideoIframe(url: string) {

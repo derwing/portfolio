@@ -31,6 +31,12 @@ body.dark-mode {
     }
 }
 
+.section-whatcando>.p-card,
+.p-card-body,
+.p-card-content {
+    padding: 0 5px!important;
+}
+
 //Home cards
 // Global Media Querys
 @media (max-width: 575px) {

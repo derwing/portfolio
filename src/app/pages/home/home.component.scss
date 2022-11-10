@@ -1,3 +1,4 @@
+// Hero section
 .img-col {
     // <a href='https://pngtree.com/so/download'>download png from pngtree.com/</a>
     background-image: url('../../../assets/images/background-hero1.png');
@@ -21,7 +22,7 @@
     height: 495px;
 }
 
-// card
+// section 2
 .text-webkit {
     text-align: -webkit-center;
 }
@@ -33,6 +34,10 @@
 
 .card-button {
     width: 100%!important;
+}
+
+.icon-color {
+    color: yellow;
 }
 
 // FlipCard

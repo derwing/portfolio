@@ -1,114 +1,122 @@
 <section class="hero-content mt-2">
-    <div class="container col-8 md:col-10 col-offset-1">
+    <div class="container col-8 md:col-10 md:col-offset-1">
         <div class="grid text-col">
             <div class="col md:col-6 img-col text-right hidden-xs-down">
-                <img src="../../../assets/images/manWithoutBG.png" class="img-hero" alt="profile photo" loading="lazy">
+                <a *ngIf="!darkMode" href="https://github.com/derwing" target="_blank"><img src="../../../assets/images/git-hub.png" alt="git hub logo" width="28px"></a>
+                <a *ngIf="darkMode" href="https://github.com/derwing" target="_blank"><img src="../../../assets/images/git-hub-white.png" alt="git hub logo" width="28px"></a>
+                <a *ngIf="!darkMode" class="ml-2" href="https://twitter.com/derwing" target="_blank"><img src="../../../assets/images/twitter-logo.png" alt="twitter logo" width="30px"></a>
+                <a *ngIf="darkMode" class="ml-2" href="https://twitter.com/derwing" target="_blank"><img src="../../../assets/images/twitter-logo-white.png" alt="twitter logo" width="30px"></a>
+                <a *ngIf="!darkMode" class="ml-2" href="https://www.freecodecamp.org/certification/derwing/responsive-web-design" target="_blank"><img src="../../../assets/images/free-code-camp.png" alt="free code camp certified" width="35px"></a>
+                <a *ngIf="darkMode" class="ml-2" href="https://www.freecodecamp.org/certification/derwing/responsive-web-design" target="_blank"><img src="../../../assets/images/free-code-camp-white.png" alt="free code camp certified" width="35px"></a>
+                <a *ngIf="!darkMode" class="ml-2" href="https://www.linkedin.com/in/derwing/" target="_blank"><img src="../../../assets/images/linkedin-logo.png" alt="linkedin logo" width="28px"></a>
+                <a *ngIf="darkMode" class="ml-2" href="https://www.linkedin.com/in/derwing/" target="_blank"><img src="../../../assets/images/linkedin-logo-white.png" alt="linkedin logo" width="28px"></a>
+                <img src="../../../assets/images/manWithoutBG.png " class="img-hero " alt="profile photo " loading="lazy ">
             </div>
-            <div class="col-12 md:col-6 lg:col-6 text-center text-col-info">
-                <h2 class="display-5 fw-bold lh-1 mb-3">Soy Derwing Medina</h2>
+            <div class="col-12 md:col-6 lg:col-6 text-center text-col-info ">
+                <h2 class="display-5 fw-bold lh-1 mb-3 ">Soy Derwing Medina</h2>
 
                 <!-- Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins. -->
 
-                <code class="text-left">
-                    <span class="text-red-400 mr-1">export</span> <span class="text-blue-500 mr-1">class</span> <span class="text-primary mr-1">Personality &lbrace; </span>
+                <code class="text-left ">
+                    <span class="text-red-400 mr-1 ">export</span> <span class="text-blue-500 mr-1 ">class</span> <span class="text-primary mr-1 ">Personality &lbrace; </span>
                     <br>
-                    <ul class="text-left list-none">
+                    <ul class="text-left list-none ">
                         <li>
-                            <span class="text-blue-400">curius:</span> <span class="text-green-500 ml-1">behavior</span> = <span class="text-orange-500">'Using for building things';</span>
+                            <span class="text-blue-400 ">curius:</span> <span class="text-green-500 ml-1 ">behavior</span> = <span class="text-orange-500 ">'Using for building things';</span>
                         </li>
                         <li>
-                            <span class="text-blue-400">reliability:</span> <span class="text-green-500 ml-1">value</span> = <span class="text-orange-500">'My focus is to quickly gain business insight to add value';</span>
+                            <span class="text-blue-400 ">reliability:</span> <span class="text-green-500 ml-1 ">value</span> = <span class="text-orange-500 ">'My focus is to quickly gain business insight to add value';</span>
                         </li>
-                        <span class="text-blue-400">highWorkEthics:</span> <span class="text-green-500 ml-1">values</span> = <span class="text-orange-500">'non-negotiable';</span>
+                        <span class="text-blue-400 ">highWorkEthics:</span> <span class="text-green-500 ml-1 ">values</span> = <span class="text-orange-500 ">'non-negotiable';</span>
                         <li>
                         </li>
                         <li>
-                            <span class="text-blue-400">commonSense:</span> <span class="text-green-500 ml-1">behavior</span> = <span class="text-orange-500">'Sounds weird but trust me it's more necessary that you thing in the IT world';</span>
+                            <span class="text-blue-400 ">commonSense:</span> <span class="text-green-500 ml-1 ">behavior</span> = <span class="text-orange-500 ">'Sounds weird but trust me it's more necessary that you thing in the IT world';</span>
                             </li>
                     </ul>
-                    <span class="text-primary">&rbrace;</span>
-                <br>
-                <div class="text-left">
-                    <span class="text-blue-600">constructor():</span> <span class="text-primary ml-1">&lbrace;</span>
-                    <span class="text-blue-400 ml-1">private:</span><span class="text-green-500 ml-1">theMostImportantThing:</span> Family
-                    <span class="text-primary">&rbrace;</span>
+                    <span class="text-primary ">&rbrace;</span>
                     <br>
-                    <br>
-                    <span class="text-yellow-600">ngOnInit():</span> void <span class="text-primary">&lbrace;</span>
+                    <div class="text-left ">
+                        <span class="text-blue-600 ">constructor():</span> <span class="text-primary ml-1 ">&lbrace;</span>
+                        <span class="text-blue-400 ml-1 ">private:</span><span class="text-green-500 ml-1 ">theMostImportantThing:</span> Family
+                        <span class="text-primary ">&rbrace;</span>
+                        <br>
+                        <br>
+                        <span class="text-yellow-600 ">ngOnInit():</span> void <span class="text-primary ">&lbrace;</span>
                             <br>
-                            <span class="text-green-800">// Call method life purpose.</span>
+                            <span class="text-green-800 ">// Call method life purpose.</span>
                             <br>
-                            <span class="text-yellow-600 ml-3">this.lifePorpuse();</span>
+                            <span class="text-yellow-600 ml-3 ">this.lifePorpuse();</span>
                             <br>
-                            <span class="text-primary">&rbrace;</span>
+                            <span class="text-primary ">&rbrace;</span>
                             <br>
                             <br>
-                            <span class="text-yellow-600">lifePorpuse() </span> <span class="text-primary">&lbrace;</span>
+                            <span class="text-yellow-600 ">lifePorpuse() </span> <span class="text-primary ">&lbrace;</span>
                             <br>
-                            <span class="text-orange-500 ml-1">if</span> <span class="text-yellow-600 ml-1">(IAmStillAlive)</span> <span class="text-primary ml-1">&lbrace;</span>
+                            <span class="text-orange-500 ml-1 ">if</span> <span class="text-yellow-600 ml-1 ">(IAmStillAlive)</span> <span class="text-primary ml-1 ">&lbrace;</span>
                             <br>
-                            <span class="text-yellow-600 ml-3">this.keepLearning();</span>
+                            <span class="text-yellow-600 ml-3 ">this.keepLearning();</span>
                             <br>
-                            <span class="text-primary ml-3">&rbrace;</span>
+                            <span class="text-primary ml-3 ">&rbrace;</span>
                             <br>
-                            <span class="text-primary">&rbrace;</span>
-                        </div>
-                        </code>
+                            <span class="text-primary ">&rbrace;</span>
+                     </div>
+                </code>
             </div>
         </div>
     </div>
 </section>
-<section class="principal-projects mt-3">
-    <div class="grid surface-50 text-center">
-        <div class="col-12 sm:col-3">
-            <h2 class="text-orange-500 media-title">Media</h2>
-            <p class="text-orange-400">Interesting projects and media exposure</p>
+<!-- <section class="principal-projects mt-3 "> 
+    <div class="grid surface-50 text-center ">
+        <div class="col-12 sm:col-3 ">
+            <h2 class="text-orange-500 media-title ">Media</h2>
+            <p class="text-orange-400 ">Interesting projects and media exposure</p>
         </div>
-        <div class="col-4 sm:col-3 text-webkit">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="img-card" alt="Card" src="https://cdn-icons-png.flaticon.com/512/3800/3800088.png">
+        <div class="col-4 sm:col-3 text-webkit ">
+            <div class="flip-card ">
+                <div class="flip-card-inner ">
+                    <div class="flip-card-front ">
+                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/3800/3800088.png ">
                     </div>
-                    <div class="flip-card-back">
+                    <div class="flip-card-back ">
                         <h1>TV and Conferences</h1>
-                        <p class="hidden-xs-down">Cuidatos IESA</p>
-                        <p class="hidden-xs-down">TV News</p>
+                        <p class="hidden-xs-down ">Cuidatos IESA</p>
+                        <p class="hidden-xs-down ">TV News</p>
                         <br>
                         <br>
-                        <p-button class="hidden-xs-down" icon="pi pi-iconName" label="Click to see"></p-button>
+                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-4 sm:col-3 text-webkit">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="img-card" alt="Card" src="https://cdn-icons-png.flaticon.com/512/3308/3308395.png">
+        <div class="col-4 sm:col-3 text-webkit ">
+            <div class="flip-card ">
+                <div class="flip-card-inner ">
+                    <div class="flip-card-front ">
+                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/3308/3308395.png ">
                     </div>
-                    <div class="flip-card-back">
+                    <div class="flip-card-back ">
                         <h1>Web Application Projects</h1>
-                        <p class="hidden-xs-down">Angular</p>
-                        <p class="hidden-xs-down">Wordpress</p>
-                        <p class="hidden-xs-down">Vanilla</p>
-                        <p-button class="hidden-xs-down" icon="pi pi-iconName" label="Click to see"></p-button>
+                        <p class="hidden-xs-down ">Angular</p>
+                        <p class="hidden-xs-down ">Wordpress</p>
+                        <p class="hidden-xs-down ">Vanilla</p>
+                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col sm:col-3 text-webkit">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="img-card" alt="Card" src="https://cdn-icons-png.flaticon.com/512/270/270780.png">
+        <div class="col sm:col-3 text-webkit ">
+            <div class="flip-card ">
+                <div class="flip-card-inner ">
+                    <div class="flip-card-front ">
+                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/270/270780.png ">
                     </div>
-                    <div class="flip-card-back">
+                    <div class="flip-card-back ">
                         <h1>Mobile Application Projects</h1>
-                        <p class="hidden-xs-down">Ionic</p>
-                        <p class="hidden-xs-down">Flutter</p>
-                        <p class="hidden-xs-down">Flutter IOT</p>
-                        <p-button class="hidden-xs-down" icon="pi pi-iconName" label="Click to see"></p-button>
+                        <p class="hidden-xs-down ">Ionic</p>
+                        <p class="hidden-xs-down ">Flutter</p>
+                        <p class="hidden-xs-down ">Flutter IOT</p>
+                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
                     </div>
                 </div>
             </div>
@@ -116,7 +124,82 @@
 
 
     </div>
+</section> -->
+<section class="section-2 surface-50 mt-3 border-round">
+    <div class="grid justify-content-center">
+        <div class="col">
+            <ul class="list-none">
+                <li class="mb-4">
+                    <p-card class="section-whatcando">
+                        <div class="grid">
+                            <div class="col text-center hidden-xs-down">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1329/1329016.png" alt="web application" width="100px">
+                            </div>
+                            <div class="col-9  align-items-center">
+                                <h2 class="mt-0">Web Application Programing</h2>
+                                <p><span class="text-600">Stack:</span> HTML, CSS, SCSS, Bootstrap, JS, TS, Angular, PrimeNg, Material </p>
+                            </div>
+                        </div>
+                    </p-card>
+                </li>
+                <li class="mb-4">
+                    <p-card class="section-whatcando">
+                        <div class="grid">
+                            <div class="col text-center hidden-xs-down">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2645/2645725.png" alt="web application" width="100px">
+                            </div>
+                            <div class="col-9 align-items-center">
+                                <h2 class="mt-0">Mobile Application Programing</h2>
+                                <p><span class="text-600">Stack:</span> Ionic with Angular, Dart/Flutter </p>
+                            </div>
+                        </div>
+                    </p-card>
+                </li>
+                <li class="mb-4">
+                    <p-card class="section-whatcando">
+                        <div class="grid">
+                            <div class="col text-center hidden-xs-down">
+                                <img src="https://cdn-icons-png.flaticon.com/512/6119/6119533.png" alt="web application" width="100px">
+                            </div>
+                            <div class="col-9 align-items-center">
+                                <h2 class="mt-0">IoT Programing</h2>
+                                <p><span class="text-600">Stack:</span> Dart/Flutter </p>
+                            </div>
+                        </div>
+                    </p-card>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="justify-content-center text-center">
+                <h2>What Can I Do For You?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione autem totam ad excepturi reprehenderit provident amet quis itaque? Dolores est sequi nesciunt quam sunt ea ipsam. Id debitis recusandae iure?</p>
+            </div>
+        </div>
+        <!-- <div class=" flex justify-content-start flex-wrap card-container blue-container ">
+            <div class="flex align-items-center justify-content-center bg-blue-500 font-bold text-white border-round m-2 ">
+                <i class="pi pi-fw pi-github "></i>
+                <h2>Lo que sea</h2>
+                p
+
+            </div>
+            <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2 ">2</div>
+            <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2 ">3</div>
+            <div class="col ">
+                <h2>What Do I Help?</h2>
+            </div>
+        </div> -->
+    </div>
 </section>
-<section>
-    <p>xxx</p>
+<section class="bg-blue-200 mt-6 ">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit
+    amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur
+    non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro
+    corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis
+    iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem
+    aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum
+    a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae
+    voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt
+    mollitia aliquam aperiam illum.
 </section>
