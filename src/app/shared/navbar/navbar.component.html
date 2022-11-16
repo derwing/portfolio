@@ -5,7 +5,8 @@
     </ng-template>
     <!-- Desktop buttons -->
     <a pButton type="button" href="https://wa.me/+573208676721?text=Hello%20From%20the%20Website" target="_blank" class="whatsapp-btn hidden-xs-down">{{'navbar.lets-talk' | translate | titlecase }} <i class="ml-1 pi pi-whatsapp"></i></a>
-    <button pButton type="button" class="mr-6 ml-2 p-button-raised  p-button-rounded p-button-icon-only hidden-xs-down" [ngClass]="{'p-button-secondary': !darkModeStatus, 'p-button-warning': darkModeStatus}" (click)="darkMode()"><i *ngIf="!darkModeStatus" class="pi pi-moon"></i><i class="pi pi-sun" *ngIf="darkModeStatus"></i></button>
+    <button pButton type="button" class="mr-6 ml-2 p-button-raised  p-button-rounded p-button-icon-only hidden-xs-down transition-colors transition-duration-500" [ngClass]="{'p-button-secondary hover:bg-yellow-500': darkModeStatus, 'p-button-warning hover:bg-gray-500': !darkModeStatus}"
+        (click)="darkMode()" (mouseover)="changeIcon($event)" (mouseleave)="changeIcon($event)"><span class="pi" [ngClass]="{'pi-moon': iconMoon, 'pi-sun': !iconMoon}"></span></button>
     <!-- Mobile buttons -->
     <a pButton type="button" href="https://wa.me/+573208676721?text=Hello%20From%20the%20Website" target="_blank" class="whatsapp-btn p-button-rounded p-button-text p-button-icon-only hidden-sm-up"><i class="pi pi-whatsapp p-button-secondary"></i></a>
     <button pButton type="button" class="p-button-rounded p-button-text p-button-icon-only hidden-sm-up" [ngClass]="{'p-button-secondary': !darkModeStatus, 'p-button-warning': darkModeStatus}" (click)="darkMode()"><i *ngIf="!darkModeStatus" class="pi pi-moon"></i><i class="pi pi-sun" *ngIf="darkModeStatus"></i></button>

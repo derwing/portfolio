@@ -21,18 +21,9 @@
                     <span class="text-red-400 mr-1 ">export</span> <span class="text-blue-500 mr-1 ">class</span> <span class="text-primary mr-1 ">Personality &lbrace; </span>
                     <br>
                     <ul class="text-left list-none ">
-                        <li>
-                            <span class="text-blue-400 ">curius:</span> <span class="text-green-500 ml-1 ">behavior</span> = <span class="text-orange-500 ">'Using for building things';</span>
+                        <li *ngFor="let characteristics of filteredPersonality">
+                            <span class="text-blue-400">{{characteristics[0]}}</span><span class="text-green-500 ml-1 ">{{characteristics[1]}}</span> = <span class="text-orange-500 ">{{characteristics[2]}}</span>
                         </li>
-                        <li>
-                            <span class="text-blue-400 ">reliability:</span> <span class="text-green-500 ml-1 ">value</span> = <span class="text-orange-500 ">'My focus is to quickly gain business insight to add value';</span>
-                        </li>
-                        <span class="text-blue-400 ">highWorkEthics:</span> <span class="text-green-500 ml-1 ">values</span> = <span class="text-orange-500 ">'non-negotiable';</span>
-                        <li>
-                        </li>
-                        <li>
-                            <span class="text-blue-400 ">commonSense:</span> <span class="text-green-500 ml-1 ">behavior</span> = <span class="text-orange-500 ">'Sounds weird but trust me it's more necessary that you thing in the IT world';</span>
-                            </li>
                     </ul>
                     <span class="text-primary ">&rbrace;</span>
                     <br>
@@ -66,66 +57,8 @@
         </div>
     </div>
 </section>
-<!-- <section class="principal-projects mt-3 "> 
-    <div class="grid surface-50 text-center ">
-        <div class="col-12 sm:col-3 ">
-            <h2 class="text-orange-500 media-title ">Media</h2>
-            <p class="text-orange-400 ">Interesting projects and media exposure</p>
-        </div>
-        <div class="col-4 sm:col-3 text-webkit ">
-            <div class="flip-card ">
-                <div class="flip-card-inner ">
-                    <div class="flip-card-front ">
-                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/3800/3800088.png ">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>TV and Conferences</h1>
-                        <p class="hidden-xs-down ">Cuidatos IESA</p>
-                        <p class="hidden-xs-down ">TV News</p>
-                        <br>
-                        <br>
-                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4 sm:col-3 text-webkit ">
-            <div class="flip-card ">
-                <div class="flip-card-inner ">
-                    <div class="flip-card-front ">
-                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/3308/3308395.png ">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>Web Application Projects</h1>
-                        <p class="hidden-xs-down ">Angular</p>
-                        <p class="hidden-xs-down ">Wordpress</p>
-                        <p class="hidden-xs-down ">Vanilla</p>
-                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col sm:col-3 text-webkit ">
-            <div class="flip-card ">
-                <div class="flip-card-inner ">
-                    <div class="flip-card-front ">
-                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/270/270780.png ">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>Mobile Application Projects</h1>
-                        <p class="hidden-xs-down ">Ionic</p>
-                        <p class="hidden-xs-down ">Flutter</p>
-                        <p class="hidden-xs-down ">Flutter IOT</p>
-                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-
-    </div>
-</section> -->
-<section class="section-2 surface-50 mt-3 border-round">
+<section class="section-2 surface-0 mt-3 border-round">
     <div class="grid justify-content-center">
         <div class="col">
             <ul class="list-none">
@@ -191,15 +124,155 @@
         </div> -->
     </div>
 </section>
-<section class="bg-blue-200 mt-6 ">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing
-    elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur
-    non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro
-    corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis
-    iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem
-    aspernatur ea ipsum a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum
-    a debitis molestiae voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae
-    voluptatum incidunt mollitia aliquam aperiam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur non dolor quas porro corrupti, officiis iure exercitationem aspernatur ea ipsum a debitis molestiae voluptatum incidunt
-    mollitia aliquam aperiam illum.
+<section class="surface-ground border-round mt-1">
+    <h2 class="text-center pt-2">Work Experience</h2>
+    <!-- <div class="grid">
+        <div class="col">
+
+        </div>
+        <div class="col">
+
+        </div>
+    </div> -->
+    <div class="card">
+        <p-timeline [value]="events1" align="alternate" styleClass="customized-timeline">
+            <ng-template pTemplate="marker" let-event>
+                <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
+                    <i [ngClass]="event.icon"></i>
+                </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+                <div class="content-card">
+                    <img [src]="'../../../assets/images/' + event.img" [width]="event.imgWidth" class="company-logo border-round p-1" [height]="event.imgHeight">
+                    <br>
+                    <small class="text-color-secondary">{{event.name}}</small>
+                    <br>
+                    <small>{{event.date}}</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                    <button pButton label="Read more" class="p-button-text"></button>
+                </div>
+            </ng-template>
+        </p-timeline>
+    </div>
 </section>
+
+<section class="surface-ground mt-3 border-round mb-5">
+    <div class="grid">
+        <div class="col-4">
+            <h5 class="ml-4 mb-0">My Lates Works</h5>
+            <p class="ml-5 mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro perspiciatis repudiandae fugit quaerat laborum accusamus eveniet illum fuga, veritatis expedita eius, tenetur quas doloremque impedit! Accusamus consequatur nulla quas.</p>
+        </div>
+        <div class="col-8">
+            <!-- [autoplayInterval]="3000" -->
+            <p-carousel [value]="lastworks" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+                <!-- <ng-template pTemplate="header">
+                    <h5>Circular, AutoPlay, 3 Items per Page and Scroll by 1</h5>
+                </ng-template> -->
+                <ng-template let-works pTemplate="item">
+                    <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4">
+                        <p-header>
+                            <span class="text-blue-700">{{works.name}}</span>
+                        </p-header>
+                        <img [src]="'../../../assets/images/' + works.img" class="company-logo border-round p-1" [height]="works.imgHeight" [ngStyle]="{'transform': 'rotate(-20deg)'}">
+                    </p-card>
+                </ng-template>
+            </p-carousel>
+
+
+            <!-- <ng-template let-event pTemplate="item">
+                <p-card class="shadow-8" [style]="{'width': '15rem', 'margin-bottom': '2em'}">
+                    <ng-template pTemplate="header">
+                        Header content here
+                    </ng-template>
+                    Body Content
+                    <img [src]="'../../../assets/images/' + event.img" [width]="event.imgWidth" class="company-logo border-round p-1" [height]="event.imgHeight">
+                    <ng-template pTemplate="footer">
+                        Footer content here
+                    </ng-template>
+                </p-card>
+
+                <p-card class="shadow-8 ml-2" [style]="{'width': '15rem', 'margin-bottom': '2em'}">
+                    <ng-template pTemplate="header">
+                        Header content here
+                    </ng-template>
+                    Body Content
+                    <img [src]="'../../../assets/images/' + event.img" [width]="event.imgWidth" class="company-logo border-round p-1" [height]="event.imgHeight">
+                    <ng-template pTemplate="footer">
+                        Footer content here
+                    </ng-template>
+                </p-card>
+
+                <p-card class="shadow-8 ml-2" [style]="{'width': '15rem', 'margin-bottom': '2em'}">
+                    <ng-template pTemplate="header">
+                        Header content here
+                    </ng-template>
+                    Body Content
+                    <img [src]="'../../../assets/images/' + event.img" [width]="event.imgWidth" class="company-logo border-round p-1" [height]="event.imgHeight">
+                    <ng-template pTemplate="footer">
+                        Footer content here
+                    </ng-template>
+                </p-card>
+            </ng-template> -->
+        </div>
+    </div>
+</section>
+
+<!-- <section class="principal-projects mt-3 "> 
+    <div class="grid surface-50 text-center ">
+        <div class="col-12 sm:col-3 ">
+            <h2 class="text-orange-500 media-title ">Media</h2>
+            <p class="text-orange-400 ">Interesting projects and media exposure</p>
+        </div>
+        <div class="col-4 sm:col-3 text-webkit ">
+            <div class="flip-card ">
+                <div class="flip-card-inner ">
+                    <div class="flip-card-front ">
+                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/3800/3800088.png ">
+                    </div>
+                    <div class="flip-card-back ">
+                        <h1>TV and Conferences</h1>
+                        <p class="hidden-xs-down ">Cuidatos IESA</p>
+                        <p class="hidden-xs-down ">TV News</p>
+                        <br>
+                        <br>
+                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 sm:col-3 text-webkit ">
+            <div class="flip-card ">
+                <div class="flip-card-inner ">
+                    <div class="flip-card-front ">
+                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/3308/3308395.png ">
+                    </div>
+                    <div class="flip-card-back ">
+                        <h1>Web Application Projects</h1>
+                        <p class="hidden-xs-down ">Angular</p>
+                        <p class="hidden-xs-down ">Wordpress</p>
+                        <p class="hidden-xs-down ">Vanilla</p>
+                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col sm:col-3 text-webkit ">
+            <div class="flip-card ">
+                <div class="flip-card-inner ">
+                    <div class="flip-card-front ">
+                        <img class="img-card " alt="Card " src="https://cdn-icons-png.flaticon.com/512/270/270780.png ">
+                    </div>
+                    <div class="flip-card-back ">
+                        <h1>Mobile Application Projects</h1>
+                        <p class="hidden-xs-down ">Ionic</p>
+                        <p class="hidden-xs-down ">Flutter</p>
+                        <p class="hidden-xs-down ">Flutter IOT</p>
+                        <p-button class="hidden-xs-down " icon="pi pi-iconName " label="Click to see "></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section> -->

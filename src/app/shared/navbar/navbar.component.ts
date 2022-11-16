@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   darkModeStatus: boolean = false;
   items: MenuItem[] = []
   theme: string = 'lara-light';
-
+  iconMoon: boolean = false;;
 
   constructor(
     public translate: TranslateService,
@@ -28,6 +28,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.darkModeStatus = this.themeService.darkMode;
+    this.iconMoon = this.darkModeStatus;
     setTimeout(() => {
       this.loadMenu();
     }, 1000);
@@ -77,10 +78,25 @@ export class NavbarComponent implements OnInit {
       var element = document.getElementById('body') as HTMLElement;
       element.classList.remove('dark-mode');
       this.storageService.saveData('themeMode', 'lara-light');
+    }
+  }
 
+  changeIcon(event: Event) {
+    if (event.type === 'mouseover') {
+      if (!this.darkModeStatus) {
+        this.iconMoon = true;
+      } else {
+        this.iconMoon = false;
+      }
     }
 
-
+    if (event.type === 'mouseleave') {
+      if (this.darkModeStatus) {
+        this.iconMoon = true;
+      } else {
+        this.iconMoon = false;
+      }
+    }
   }
 
 }
