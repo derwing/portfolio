@@ -58,7 +58,7 @@
     </div>
 </section>
 
-<section class="section-2 surface-0 mt-3 border-round">
+<section class="bg-cyan-500 mt-3 border-round">
     <div class="grid justify-content-center">
         <div class="col">
             <ul class="list-none pl-1">
@@ -148,7 +148,7 @@
     </div>
 </section>
 
-<section class="surface-ground mt-3 border-round mb-6">
+<section class="bg-cyan-500 mt-3 border-round mb-6">
     <div class="grid">
         <div class="md:col-4 hidden-xs-down">
             <h5 class="ml-4 mb-0">My Lates Works</h5>
@@ -173,26 +173,29 @@
         </div>
     </div>
 </section>
-<div class="grid">
-    <div class="col-12">
-        <h5 class="ml-4 mb-0">Recomendations</h5>
-    </div>
-    <div class="col-12 md:col-8">
-        <!-- [autoplayInterval]="3000" -->
-        <p-carousel [value]="lastworks" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
-            <ng-template let-works pTemplate="item">
-                <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4">
-                    <p-header>
-                        <span class="text-blue-700">{{works.name}}</span>
-                    </p-header>
-                    <img [src]="'../../../assets/images/' + works.img" class="company-logo border-round p-1 shadow-4" [height]="works.imgHeight" [ngStyle]="{'transform': 'rotate(-20deg)'}">
-                </p-card>
-            </ng-template>
-        </p-carousel>
+<section class="surface-ground border-round">
+    <div class="grid justify-content-center">
+        <div class="col-12">
+            <h5 class="ml-4 mb-0">Recomendations</h5>
+        </div>
+        <div class="col-12 md:col-10">
+            <!-- [autoplayInterval]="3000" -->
+            <p-carousel [value]="recomendations" styleClass="custom-carousel" [autoplayInterval]="3000" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+                <ng-template let-recomendation pTemplate="item">
+                    <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4">
+                        <p-header>
+                            <p-avatar [image]="'../../../assets/images/' + recomendation.img" shape="circle" class="avatar" size="xlarge"></p-avatar>
+                        </p-header>
+                        <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}}</p>
+                        <small class="avatar-charge text-color-secondary">{{recomendation.charge}}</small>
+                        <p class="review-text mt-1">{{recomendation.review}}</p>
+                        <!-- <img [src]="'../../../assets/images/' + works.img" class="company-logo border-round p-1 shadow-4" [height]="works.imgHeight" [ngStyle]="{'transform': 'rotate(-20deg)'}"> -->
+                    </p-card>
+                </ng-template>
+            </p-carousel>
 
+        </div>
     </div>
-</div>
-<section>
 
 </section>
 

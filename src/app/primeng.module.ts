@@ -1,24 +1,26 @@
-import { NgModule } from '@angular/core';
-import { MenubarModule } from 'primeng/menubar';
-import { ButtonModule } from 'primeng/button';
+import { AvatarModule } from 'primeng/avatar';
 import { BadgeModule } from 'primeng/badge';
+import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { CarouselModule } from 'primeng/carousel';
+import { MenubarModule } from 'primeng/menubar';
+import { NgModule } from '@angular/core';
 import { SkeletonModule } from 'primeng/skeleton';
 import { TimelineModule } from 'primeng/timeline';
-import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [],
   imports: [
   ],
   exports: [
-    MenubarModule,
-    ButtonModule,
+    AvatarModule,
     BadgeModule,
+    ButtonModule,
     CardModule,
+    CarouselModule,
+    MenubarModule,
     SkeletonModule,
     TimelineModule,
-    CarouselModule
   ]
 })
 export class PrimengModule { }

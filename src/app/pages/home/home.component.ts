@@ -101,6 +101,42 @@ export class HomeComponent implements OnInit, DoCheck {
     },
   ];
 
+  // Recomendations Section
+  recomendations = [
+    {
+      name: "Derwing Medina",
+      charge: "CEO of xxx",
+      icon: PrimeIcons.HEART,
+      color: "red",
+      img: 'AvatarPro.png',
+      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+    },
+    {
+      name: "Fulano de tal",
+      charge: "CEO of xxx",
+      icon: PrimeIcons.HEART,
+      color: "red",
+      img: 'AvatarPro.png',
+      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+    },
+    {
+      name: "Fulano de tal",
+      charge: "CEO of xxx",
+      icon: PrimeIcons.HEART,
+      color: "red",
+      img: 'Avatar.jpg',
+      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+    },
+    {
+      name: "Fulano de tal",
+      charge: "CEO of xxx",
+      icon: PrimeIcons.HEART,
+      color: "red",
+      img: 'AvatarPro.png',
+      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+    }
+  ];
+
   responsiveOptions;
 
   constructor(
