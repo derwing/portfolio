@@ -13,12 +13,12 @@
                 <img src="../../../assets/images/manWithoutBG.png " class="img-hero " alt="profile photo " loading="lazy ">
             </div>
             <div class="col-12 md:col-6 lg:col-6 text-center text-col-info ">
-                <h2 class="display-5 fw-bold lh-1 mb-3 ">Soy Derwing Medina</h2>
+                <h2 class="display-5 fw-bold lh-1 mb-3 ">{{'home.hero-section.iam' | translate }} Derwing Medina</h2>
 
                 <!-- Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins. -->
 
                 <code class="text-left ">
-                    <span class="text-red-400 mr-1 ">export</span> <span class="text-blue-500 mr-1 ">class</span> <span class="text-primary mr-1 ">Personality &lbrace; </span>
+                    <span class="text-red-400 mr-1 ">export</span> <span class="text-blue-500 mr-1 ">class</span> <span class="text-primary mr-1 ">{{'home.hero-section.personality' | translate}} &lbrace; </span>
                     <br>
                     <ul class="text-left list-none">
                         <li *ngFor="let characteristics of filteredPersonality">
@@ -29,13 +29,13 @@
                     <br>
                     <div class="text-left ">
                         <span class="text-blue-600 ">constructor():</span> <span class="text-primary ml-1 ">&lbrace;</span>
-                        <span class="text-blue-400 ml-1 ">private:</span><span class="text-green-500 ml-1 ">theMostImportantThing:</span> Family
+                        <span class="text-blue-400 ml-1 ">private:</span><span class="text-green-500 ml-1 ">{{'home.hero-section.most-important' | translate }}</span> {{'home.hero-section.family' | translate}}
                         <span class="text-primary ">&rbrace;</span>
                         <br>
                         <br>
                         <span class="text-yellow-600 ">ngOnInit():</span> void <span class="text-primary ">&lbrace;</span>
                             <br>
-                            <span class="text-green-800 ">// Call method life purpose.</span>
+                            <span class="text-green-800 ">{{'home.hero-section.call-method' | translate}}</span>
                             <br>
                             <span class="text-yellow-600 ml-3 ">this.lifePorpuse();</span>
                             <br>
@@ -59,44 +59,57 @@
 </section>
 
 <section class="bg-cyan-500 mt-3 border-round">
-    <div class="grid justify-content-center">
-        <div class="col">
+    <div class="grid justify-content-center work-category-grid">
+        <div class="col ">
             <ul class="list-none pl-1">
-                <li class="mb-4">
+                <li class="mb-4 li-work-categories">
                     <p-card class="section-whatcando">
                         <div class="grid">
                             <div class="col text-center hidden-xs-down">
-                                <img src="https://cdn-icons-png.flaticon.com/512/1329/1329016.png" alt="web application" width="100px">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1329/1329016.png" alt="web application icon" width="100px">
                             </div>
                             <div class="col-9  align-items-center">
-                                <h2 class="mt-0">Web Application Programing</h2>
-                                <p><span class="text-600">Stack:</span> HTML, CSS, SCSS, Bootstrap, JS, TS, Angular, PrimeNg, Material </p>
+                                <h2 class="mt-0">{{'section2.web-app-programming' | translate}}</h2>
+                                <p><span class="text-600">{{'section2.stack' | translate}}</span> HTML, CSS, SCSS, Bootstrap, JS, TS, Angular, Ionic, PrimeNg, Material </p>
                             </div>
                         </div>
                     </p-card>
                 </li>
-                <li class="mb-4">
+                <li class="mb-4 li-work-categories">
                     <p-card class="section-whatcando">
                         <div class="grid">
                             <div class="col text-center hidden-xs-down">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2645/2645725.png" alt="web application" width="100px">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2645/2645725.png" alt="Mobile developer icon" width="100px">
                             </div>
                             <div class="col-9 align-items-center">
-                                <h2 class="mt-0">Mobile Application Programing</h2>
-                                <p><span class="text-600">Stack:</span> Ionic with Angular, Dart/Flutter </p>
+                                <h2 class="mt-0">{{'section2.mobile-app-programming' | translate}}</h2>
+                                <p><span class="text-600">{{'section2.stack' | translate}}</span> Ionic with Angular, Dart/Flutter </p>
                             </div>
                         </div>
                     </p-card>
                 </li>
-                <li class="mb-4">
+                <li class="mb-4 li-work-categories">
                     <p-card class="section-whatcando">
                         <div class="grid">
                             <div class="col text-center hidden-xs-down">
-                                <img src="https://cdn-icons-png.flaticon.com/512/6119/6119533.png" alt="web application" width="100px">
+                                <img src="https://cdn-icons-png.flaticon.com/512/6119/6119533.png" alt="IOT developer icon" width="100px">
                             </div>
                             <div class="col-9 align-items-center">
-                                <h2 class="mt-0">IoT Programing</h2>
-                                <p><span class="text-600">Stack:</span> Dart/Flutter </p>
+                                <h2 class="mt-0">{{'section2.iot-programming' | translate}}</h2>
+                                <p><span class="text-600">{{'section2.stack' | translate}}</span> Dart/Flutter </p>
+                            </div>
+                        </div>
+                    </p-card>
+                </li>
+                <li class="mb-4 li-work-categories">
+                    <p-card class="section-whatcando">
+                        <div class="grid">
+                            <div class="col text-center hidden-xs-down">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5687/5687273.png" alt="Dev Ops Icon" width="100px">
+                            </div>
+                            <div class="col-9 align-items-center">
+                                <h2 class="mt-0">{{'section2.devops' | translate}}</h2>
+                                <p><span class="text-600">{{'section2.stack' | translate}}</span> Linux, Windows, Cloud, Confluence, Jira, GitHub, Kubernetes</p>
                             </div>
                         </div>
                     </p-card>
@@ -105,23 +118,10 @@
         </div>
         <div class="col">
             <div class="justify-content-center text-center">
-                <h2>What Can I Do For You?</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione autem totam ad excepturi reprehenderit provident amet quis itaque? Dolores est sequi nesciunt quam sunt ea ipsam. Id debitis recusandae iure?</p>
+                <h2>{{'section2.title' | translate }}</h2>
+                <p class="px-5">{{'section2.subtitle' | translate}}</p>
             </div>
         </div>
-        <!-- <div class=" flex justify-content-start flex-wrap card-container blue-container ">
-            <div class="flex align-items-center justify-content-center bg-blue-500 font-bold text-white border-round m-2 ">
-                <i class="pi pi-fw pi-github "></i>
-                <h2>Lo que sea</h2>
-                p
-
-            </div>
-            <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2 ">2</div>
-            <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2 ">3</div>
-            <div class="col ">
-                <h2>What Do I Help?</h2>
-            </div>
-        </div> -->
     </div>
 </section>
 <section class="surface-ground border-round mt-1">
@@ -148,7 +148,7 @@
     </div>
 </section>
 
-<section class="bg-cyan-500 mt-3 border-round mb-6">
+<section class="bg-cyan-500 mt-3 border-round mb-6" id="section3">
     <div class="grid">
         <div class="md:col-4 hidden-xs-down">
             <h5 class="ml-4 mb-0">My Lates Works</h5>

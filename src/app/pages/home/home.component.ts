@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import { ThemeService } from './../../services/theme.service';
 import { Component, DoCheck, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -12,13 +13,9 @@ export class HomeComponent implements OnInit, DoCheck {
   video: string = "ZVKmNJpmAZI"
   darkMode: boolean = false;
   // Hero section content
-  personality: string[][] = [
-    ["curius:", "behavior", "Using for building things"],
-    ["reliability:", "value", "My focus is to quickly gain business insight to add value"],
-    ["highWorkEthics:", "value", "non-negotiable"],
-    ["commonSense:", "behavior", "Sounds weird but trust me it's more necessary that you thing in the IT world"]
-  ];
+  personality: string[][] = [];
   filteredPersonality: string[][] = [];
+  lang: string = 'en';
 
   // Work experience
   events1 = [
@@ -141,7 +138,8 @@ export class HomeComponent implements OnInit, DoCheck {
 
   constructor(
     private _sanitizer: DomSanitizer,
-    private ThemeService: ThemeService
+    private ThemeService: ThemeService,
+    private translate: TranslateService
   ) {
     this.responsiveOptions = [
       {
@@ -163,13 +161,23 @@ export class HomeComponent implements OnInit, DoCheck {
   }
 
   ngOnInit(): void {
-    this.randownPersonality();
+    setTimeout(() => {
+      this.randownPersonality();
+    }, 1000);
+
+
   }
 
   ngDoCheck(): void {
     if (this.darkMode != this.ThemeService.darkMode) {
       this.darkMode = this.ThemeService.darkMode
     }
+
+    if (this.lang != this.translate.currentLang) {
+      this.lang = this.translate.currentLang;
+      this.randownPersonality();
+    }
+
   }
 
   getVideoIframe(url: string) {
@@ -185,6 +193,13 @@ export class HomeComponent implements OnInit, DoCheck {
   }
 
   randownPersonality() {
+    this.filteredPersonality = [];
+    this.personality = [
+      [this.translate.instant('home.hero-section.curius'), this.translate.instant('home.hero-section.behavior'), this.translate.instant('home.hero-section.using-for')],
+      [this.translate.instant('home.hero-section.reliability'), this.translate.instant('home.hero-section.value'), this.translate.instant('home.hero-section.focus-business')],
+      [this.translate.instant('home.hero-section.highworkethics'), this.translate.instant('home.hero-section.value'), this.translate.instant('home.hero-section.non-negotiable')],
+      [this.translate.instant('home.hero-section.commonsense'), this.translate.instant('home.hero-section.behavior'), this.translate.instant('home.hero-section.common-sense-info')]
+    ];
     const numbers = [];
     const n1 = Math.floor(Math.random() * 4);
     const n2 = Math.floor(Math.random() * 4);

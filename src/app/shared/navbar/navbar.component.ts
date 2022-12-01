@@ -15,7 +15,8 @@ export class NavbarComponent implements OnInit {
   darkModeStatus: boolean = false;
   items: MenuItem[] = []
   theme: string = 'lara-light';
-  iconMoon: boolean = false;;
+  iconMoon: boolean = false;
+  lang: string = 'en';
 
   constructor(
     public translate: TranslateService,
@@ -44,7 +45,8 @@ export class NavbarComponent implements OnInit {
       {
         label: this.titleCasePipe.transform(this.translate.instant('navbar.menu.projects')),
         icon: 'pi pi-fw pi-desktop',
-        routerLink: 'projects'
+        url: '#section3',
+        target: '_self'
       },
       {
         label: this.titleCasePipe.transform(this.translate.instant('navbar.menu.education')),
@@ -60,7 +62,58 @@ export class NavbarComponent implements OnInit {
           { label: 'Ionic', icon: 'pi pi-fw pi-refresh' }
         ]
       },
+      {
+        label: this.titleCasePipe.transform(this.translate.instant('navbar.menu.language')),
+        icon: 'pi pi-fw pi-language',
+        items: [
+          {
+            label: 'Spanish', command: (event) => {
+              this.changeLanguage('es');
+            }
+          },
+          {
+            label: 'English', command: (event) => {
+              this.changeLanguage('en');
+            }
+          },
+          {
+            label: 'French', command: (event) => {
+              this.changeLanguage('fr');
+            }
+          }
+        ]
+      },
     ];
+  }
+
+  changeLanguage(type: string) {
+    switch (type) {
+      case 'es':
+        this.translate.setDefaultLang('es');
+        this.translate.use('es');
+        break;
+      case 'en':
+        this.translate.setDefaultLang('en');
+        this.translate.use('en');
+        break;
+      case 'fr':
+        this.translate.setDefaultLang('fr');
+        this.translate.use('fr');
+        break;
+
+      default:
+        break;
+    }
+
+    localStorage.setItem('portfolio-language', type);
+  }
+
+  ngDoCheck(): void {
+    if (this.lang != this.translate.currentLang) {
+      this.lang = this.translate.currentLang;
+      this.loadMenu();
+    }
+
   }
 
   darkMode() {

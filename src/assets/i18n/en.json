@@ -4,7 +4,36 @@
         "menu": {
             "home": "home",
             "projects": "projects",
-            "education": "education"
+            "education": "education",
+            "language": "language"
         }
+    },
+    "home": {
+        "hero-section": {
+            "iam": "I am",
+            "personality": "Personality",
+            "curius": "curius",
+            "reliability": "reliability:",
+            "commonsense": "commonSense:",
+            "highworkethics": "highWorkEthics:",
+            "non-negotiable": "Non Negotiable",
+            "behavior": "behavior",
+            "value": "value",
+            "using-for": "Using for building things",
+            "focus-business": "My focus is to quickly gain business insight to add value",
+            "common-sense-info": "It sounds strange, but believe me it's more necessary than you might think in the IT world.",
+            "most-important": "theMostImportantThing:",
+            "family": "Family",
+            "call-method": "// Call method life purpose."
+        }
+    },
+    "section2": {
+        "title": "What Can I Do For You?",
+        "subtitle": "With more than 20 years of experience managing support, infrastructure, networks and servers. And the last years immersed in the world of software development I have accumulated the knowledge in technologies and processes needed to support your technical processes. And after having formed 2 companies and having participated in business rounds for entrepreneurs I have enough experience in team management to make a positive impact on the business.",
+        "stack": "Stack:",
+        "web-app-programming": "Web Application Programing",
+        "mobile-app-programming": "Mobile Application Programing",
+        "iot-programming": "IoT Programing",
+        "devops": "DevOps"
     }
 }

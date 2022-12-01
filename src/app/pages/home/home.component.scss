@@ -195,6 +195,13 @@
             /* Remove this if you don't want the 3D effect */
             font-size: 0.65rem;
         }
+        // Section 2
+        .work-category-grid {
+            flex-direction: column-reverse;
+        }
+        .li-work-categories {
+            margin-right: 0.5rem;
+        }
         // Recomendations section
         .avatar {
             margin-left: 85px;

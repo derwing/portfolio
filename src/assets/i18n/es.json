@@ -4,7 +4,36 @@
         "menu": {
             "home": "inicio",
             "projects": "proyectos",
-            "education": "educación"
+            "education": "educación",
+            "language": "idiomas"
         }
+    },
+    "home": {
+        "hero-section": {
+            "iam": "Soy",
+            "personality": "Personalidad",
+            "behavior": "comportamiento",
+            "value": "valores",
+            "curius": "curiosidad:",
+            "commonsense": "sentidoComún:",
+            "reliability": "fiable:",
+            "highworkethics": "altaEticaTrabajo:",
+            "non-negotiable": "No Negociable",
+            "using-for": "Usado para construir cosas",
+            "focus-business": "Mi objetivo es obtener rápidamente una visión del negocio para añadir valor",
+            "common-sense-info": "Suena raro, pero créeme que es más necesario de lo que se piensa en el mundo TI",
+            "most-important": "loMásImportante:",
+            "family": "Familia",
+            "call-method": "// Invocar la función proposito de vida."
+        }
+    },
+    "section2": {
+        "title": "¿Qué puedo hacer por tí?",
+        "subtitle": "Con más de 20 años de experiencia manejando soporte, infraestructura, redes y servidores. Y los últimos años inmerso en el mundo del desarrollo de software he acumulado el conocimiento en tecnologías y procesos necesarios para apoyar tus procesos técnicos. Y luego de haber formado 2 empresas y haber participado en rondas de negocios para emprendedores tengo la suficiente experiencia en la gestión de equipos para provocar un impacto positivo en el negocio.",
+        "stack": "Tecnologías:",
+        "web-app-programming": "Programación de Aplicaciones Web",
+        "mobile-app-programming": "Programación de aplicaciones móviles",
+        "iot-programming": "Programación IoT",
+        "devops": "DevOps"
     }
 }

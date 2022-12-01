@@ -1,10 +1,39 @@
 {
     "navbar": {
-        "lets-talk": "let's Talk",
+        "lets-talk": "Parlons",
         "menu": {
-            "home": "home",
-            "projects": "proyectos",
-            "education": "educación"
+            "home": "domicile",
+            "projects": "projets",
+            "education": "éducation",
+            "language": "langues"
         }
+    },
+    "home": {
+        "hero-section": {
+            "iam": "Je suis",
+            "personality": "Personnalité",
+            "behavior": "comportement",
+            "value": "valeur",
+            "curius": "curius",
+            "commonsense": "sensCommun:",
+            "reliability": "fiabilité:",
+            "highworkethics": "éthiqueTravailÉlevée:",
+            "non-negotiable": "Non négociable",
+            "using-for": "Utilisation pour la construction d'objets",
+            "focus-business": "Je me concentre sur l'acquisition rapide d'informations sur l'entreprise afin d'ajouter de la valeur.",
+            "common-sense-info": "Cela semble bizarre mais croyez-moi, c'est plus nécessaire que vous ne le pensez dans le monde de l'informatique.",
+            "most-important": "lePlusImportant:",
+            "family": "Famille",
+            "call-method": "// Invoquer la fonction d'objectif de vie."
+        }
+    },
+    "section2": {
+        "title": "Que puis-je faire pour vous ?",
+        "subtitle": "Avec plus de 20 ans d'expérience dans la gestion du support, de l'infrastructure, des réseaux et des serveurs. Et les dernières années immergées dans le monde du développement de logiciels, j'ai accumulé les connaissances en technologies et processus nécessaires pour soutenir vos processus techniques. Et après avoir créé 2 entreprises et avoir participé à des tours de table pour des entrepreneurs, j'ai suffisamment d'expérience dans la gestion d'équipe pour avoir un impact positif sur l'entreprise.",
+        "stack": "Technologies :",
+        "web-app-programming": "Programmation d'applications Web",
+        "mobile-app-programming": "Programmation d'applications mobiles",
+        "iot-programming": "Programmation IoT",
+        "devops": "DevOps"
     }
 }

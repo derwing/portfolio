@@ -27,9 +27,17 @@ export class AppComponent {
 
   setAppLanguage() {
     this.primengConfig.ripple = true;
-    this.translate.setDefaultLang('es');
-    this.translate.use(this.translate.getBrowserLang() || 'en-US');
 
+    if (localStorage.getItem('portfolio-language')) {
+      let lang = localStorage.getItem('portfolio-language') || 'en';
+      this.translate.setDefaultLang(lang);
+      this.translate.use(lang);
+    } else {
+      this.translate.setDefaultLang('fr');
+      this.translate.setDefaultLang('es');
+      this.translate.setDefaultLang('en');
+      this.translate.use(this.translate.getBrowserLang() || 'en');
+    }
   }
 
   setTheme() {
