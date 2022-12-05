@@ -153,15 +153,15 @@
 <section class="bg-cyan-500 mt-3 border-round mb-6" id="section3">
     <div class="grid">
         <div class="md:col-4 hidden-xs-down">
-            <h5 class="ml-4 mb-0"> My Lates Works</h5>
+            <h5 class="ml-4 mb-0"> My Lates courses and certifies</h5>
             <p class="ml-5 mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro perspiciatis repudiandae fugit quaerat laborum accusamus eveniet illum fuga, veritatis expedita eius, tenetur quas doloremque impedit! Accusamus consequatur nulla quas.</p>
         </div>
         <div class="col-12 md:col-8">
-            <h5 class="ml-4 mb-0 hidden-sm-up">My Lates Works</h5>
+            <h5 class="ml-4 mb-0 hidden-sm-up">My Lates courses and certifies</h5>
             <p class="ml-5 mt-0 hidden-sm-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
             <!-- [autoplayInterval]="3000" -->
-            <p-carousel [value]="lastworks" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+            <p-carousel [value]="lastworks" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="3000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
                 <ng-template let-works pTemplate="item">
                     <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4">
                         <p-header>
@@ -201,7 +201,7 @@
         </div>
         <div class="col-12 md:col-10">
             <!-- [autoplayInterval]="3000" -->
-            <p-carousel [value]="recomendations" styleClass="custom-carousel" [autoplayInterval]="3000" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+            <p-carousel [value]="recomendations" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
                 <ng-template let-recomendation pTemplate="item">
                     <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4">
                         <p-header>
