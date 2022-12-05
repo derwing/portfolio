@@ -17,46 +17,8 @@ export class HomeComponent implements OnInit, DoCheck {
   filteredPersonality: string[][] = [];
   lang: string = 'en';
 
-  // Work experience
-  events1 = [
-    {
-      name: "Atlas Global Protection inc - Canada",
-      date: "since: 15/10/2020 to:",
-      icon: PrimeIcons.HEART,
-      color: "red",
-      img: 'aidpass-logo.svg',
-      imgWidth: 150,
-      imgHeight: 50
-    },
-    {
-      name: "Soluciones Tecnológicas ConexVen - Venezuela",
-      date: "since: 15/10/2020 to:",
-      icon: PrimeIcons.WIFI,
-      color: "#673AB7",
-      img: 'conexven-logo.png',
-      imgWidth: 150,
-      imgHeight: 50
-
-    },
-    {
-      name: "DBACCESS - Venezuela",
-      date: "since: 15/10/2020 to:",
-      icon: PrimeIcons.CODE,
-      color: "#FF9800",
-      img: 'dbaccess-logo.webp',
-      imgWidth: 150,
-      imgHeight: 50
-    },
-    {
-      name: "Universidad Maritma del Caribe - Venezuela",
-      date: "16/10/2020 10:00",
-      icon: PrimeIcons.BOOK,
-      color: "#607D8B",
-      img: 'logo_umc.png',
-      imgWidth: 80,
-      imgHeight: 80
-    }
-  ];
+  // Work experiences
+  workExperiences = [{}];
 
   // Last Work 
   lastworks = [
@@ -162,7 +124,7 @@ export class HomeComponent implements OnInit, DoCheck {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.randownPersonality();
+      this.loadData();
     }, 1000);
 
 
@@ -175,7 +137,7 @@ export class HomeComponent implements OnInit, DoCheck {
 
     if (this.lang != this.translate.currentLang) {
       this.lang = this.translate.currentLang;
-      this.randownPersonality();
+      this.loadData();
     }
 
   }
@@ -192,7 +154,7 @@ export class HomeComponent implements OnInit, DoCheck {
     return this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + video);
   }
 
-  randownPersonality() {
+  loadData() {
     this.filteredPersonality = [];
     this.personality = [
       [this.translate.instant('home.hero-section.curius'), this.translate.instant('home.hero-section.behavior'), this.translate.instant('home.hero-section.using-for')],
@@ -204,12 +166,56 @@ export class HomeComponent implements OnInit, DoCheck {
     const n1 = Math.floor(Math.random() * 4);
     const n2 = Math.floor(Math.random() * 4);
     while (n1 === n2) {
-      this.randownPersonality();
+      this.loadData();
       return;
     }
     numbers.push(n1, n2);
     this.filteredPersonality.push(this.personality[n1], this.personality[n2]);
-  }
 
+
+    this.workExperiences = [
+      {
+        name: "Atlas Global Protection inc - Canada",
+        rol: this.translate.instant('section3.aidpass-rol'),
+        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 30/1/2023`,
+        icon: PrimeIcons.HEART,
+        color: "red",
+        img: 'aidpass-logo.svg',
+        text: this.translate.instant('section3.aidpass-info'),
+        link: "https://www.aidpass.com/home/about-us"
+      },
+      {
+        name: "Soluciones Tecnológicas ConexVen - Venezuela",
+        rol: this.translate.instant('section3.conexven-rol'),
+        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 15/10/2020`,
+        icon: PrimeIcons.WIFI,
+        color: "#673AB7",
+        img: 'conexven-logo.png',
+        text: this.translate.instant('section3.conexven-info'),
+        link: "https://conexven.wixsite.com/stconexven"
+
+      },
+      {
+        name: "DBACCESS - Venezuela",
+        rol: this.translate.instant('section3.dbaccess-rol'),
+        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 15/10/2020`,
+        icon: PrimeIcons.CODE,
+        color: "#FF9800",
+        img: 'dbaccess-logo.webp',
+        text: this.translate.instant('section3.dbaccess-info'),
+        link: "https://dbaccess.com/"
+      },
+      {
+        name: "Universidad Maritma del Caribe - Venezuela",
+        rol: this.translate.instant('section3.umc-rol'),
+        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 15/10/2020`,
+        icon: PrimeIcons.BOOK,
+        color: "#607D8B",
+        img: 'logo_umc.png',
+        text: this.translate.instant('section3.umc-info'),
+        link: "http://umc.edu.ve/"
+      }
+    ]
+  }
 
 }

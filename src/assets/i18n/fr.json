@@ -35,5 +35,20 @@
         "mobile-app-programming": "Programmation d'applications mobiles",
         "iot-programming": "Programmation IoT",
         "devops": "DevOps"
+    },
+
+    "section3": {
+        "Titre": "Expérience professionnelle",
+        "since": "Depuis:",
+        "to": "à:",
+        "read-more": "plus d'infos",
+        "aidpass-info": "Société de services de soins médicaux d'urgence et de consultation médicale en ligne",
+        "aidpass-rol": "Responsable technique",
+        "conexven-info": "Société de vente et de services informatiques",
+        "conexven-rol": "Responsable des opérations",
+        "dbaccess-info": "Fournisseur de services de développement off-shore et de gestion de l'innovation des startups",
+        "dbaccess-rol": "Chef de l'infrastructure",
+        "umc-info": "Instituto Universitario de la Marina Mercante de Venezuela",
+        "umc-rol": "Head of Technical Support"
     }
 }

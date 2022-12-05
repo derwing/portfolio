@@ -125,23 +125,25 @@
     </div>
 </section>
 <section class="surface-ground border-round mt-1">
-    <h2 class="text-center pt-2">Work Experience</h2>
+    <h2 class="text-center pt-2">{{'section3.title' | translate}}</h2>
     <div class="card">
-        <p-timeline [value]="events1" align="alternate" styleClass="customized-timeline">
-            <ng-template pTemplate="marker" let-event>
-                <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
-                    <i [ngClass]="event.icon"></i>
+        <p-timeline [value]="workExperiences" align="alternate" styleClass="customized-timeline">
+            <ng-template pTemplate="marker" let-experiences>
+                <span class="custom-marker p-shadow-2" [style.backgroundColor]="experiences.color">
+                    <i [ngClass]="experiences.icon"></i>
                 </span>
             </ng-template>
-            <ng-template pTemplate="content" let-event>
+            <ng-template pTemplate="content" let-experience>
                 <div class="content-card">
-                    <img [src]="'../../../assets/images/' + event.img" [width]="event.imgWidth" class="company-logo border-round p-1" [width]="100">
+                    <img [src]="'../../../assets/images/' + experience.img" [width]="experience.imgWidth" class="company-logo border-round p-1" [width]="100">
                     <br>
-                    <small class="text-color-secondary">{{event.name}}</small>
+                    <small class="text-color-secondary">{{experience.name}}</small>
                     <br>
-                    <small>{{event.date}}</small>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-                    <button pButton label="Read more" class="p-button-text"></button>
+                    <small>{{experience.rol}}</small>
+                    <br>
+                    <small>{{experience.date}}</small>
+                    <p>{{experience.text}}</p>
+                    <a pButton label="{{'section3.read-more' | translate}}" class="p-button-text" [href]="experience.link" target="_blank"></a>
                 </div>
             </ng-template>
         </p-timeline>
@@ -151,7 +153,7 @@
 <section class="bg-cyan-500 mt-3 border-round mb-6" id="section3">
     <div class="grid">
         <div class="md:col-4 hidden-xs-down">
-            <h5 class="ml-4 mb-0">My Lates Works</h5>
+            <h5 class="ml-4 mb-0"> My Lates Works</h5>
             <p class="ml-5 mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro perspiciatis repudiandae fugit quaerat laborum accusamus eveniet illum fuga, veritatis expedita eius, tenetur quas doloremque impedit! Accusamus consequatur nulla quas.</p>
         </div>
         <div class="col-12 md:col-8">

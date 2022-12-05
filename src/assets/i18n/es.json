@@ -35,5 +35,19 @@
         "mobile-app-programming": "Programación de aplicaciones móviles",
         "iot-programming": "Programación IoT",
         "devops": "DevOps"
+    },
+    "section3": {
+        "title": "Experiencia Laboral",
+        "since": "Desde:",
+        "to": "Hasta:",
+        "read-more": "Más info",
+        "aidpass-info": "Empresa de servicios de atención médica de urgencia y consultas médicas online",
+        "aidpass-rol": "Líder técnico",
+        "conexven-info": "Empresa de servicios y venta de artículos informáticos",
+        "conexven-rol": "Director de Operaciones",
+        "dbaccess-info": "Proveedor de servicios de desarrollo off-shore y gestión de innovación de startups",
+        "dbaccess-rol": "Jefe de Infraestructura",
+        "umc-info": "Instituto Universitario de la Marina Mercante de Venezuela",
+        "umc-rol": "Jefe de Soporte Técnico"
     }
 }

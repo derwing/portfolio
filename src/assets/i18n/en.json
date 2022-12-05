@@ -35,5 +35,19 @@
         "mobile-app-programming": "Mobile Application Programing",
         "iot-programming": "IoT Programing",
         "devops": "DevOps"
+    },
+    "section3": {
+        "title": "Work Experience",
+        "since": "Since:",
+        "to": "to:",
+        "read-more": "Read more",
+        "aidpass-info": "Emergency medical care services and online medical consultations company.",
+        "aidpass-rol": "Technical leader & Developer",
+        "conexven-info": "Company of services and sale of computer items.",
+        "conexven-rol": "Chief Operating Officer",
+        "dbaccess-info": "Provider of off-shore development and startup innovation management services.",
+        "dbaccess-rol": "Infraestructure Lead",
+        "umc-info": "University Institute of the Merchant Marine of Venezuela.",
+        "umc-rol": "Technical Support Manager"
     }
 }
