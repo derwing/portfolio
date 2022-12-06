@@ -7,6 +7,9 @@ import { MenubarModule } from 'primeng/menubar';
 import { NgModule } from '@angular/core';
 import { SkeletonModule } from 'primeng/skeleton';
 import { TimelineModule } from 'primeng/timeline';
+import { ImageModule } from 'primeng/image';
+import { ScrollTopModule } from 'primeng/scrolltop';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [],
@@ -21,6 +24,9 @@ import { TimelineModule } from 'primeng/timeline';
     MenubarModule,
     SkeletonModule,
     TimelineModule,
+    ImageModule,
+    ScrollTopModule,
+    DialogModule
   ]
 })
 export class PrimengModule { }

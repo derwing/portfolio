@@ -149,6 +149,20 @@
         text-align: center;
     }
     
+    // Course section
+    .course-img {
+        cursor: pointer;
+    }
+    
+    .responsive_img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-height: 600px;
+        /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
+    }
+    
+    // Goup button
     @media (min-width: 1600px) {
         .container {
             background-size: auto;

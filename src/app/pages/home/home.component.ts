@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit, DoCheck {
   workExperiences = [{}];
 
   // Last Work 
-  lastworks = [
+  lastWorks = [
     {
       name: "AidPass.com",
       date: "since: 15/10/2020 to:",
@@ -59,6 +59,33 @@ export class HomeComponent implements OnInit, DoCheck {
       imgHeight: 50
     },
   ];
+
+  // Lates courses
+  latesCourses = [
+    {
+      name: 'Responsive Web Desing',
+      img: 'fcc-webdesing.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'Dart',
+      img: 'dart.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'Angular 14',
+      img: 'angular.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+  ]
+
+  display: boolean = false;
+  activeCourse: string = '';
+  activeCourseName: string = '';
+
 
   // Recomendations Section
   recomendations = [
@@ -98,6 +125,9 @@ export class HomeComponent implements OnInit, DoCheck {
 
   responsiveOptions;
 
+
+
+
   constructor(
     private _sanitizer: DomSanitizer,
     private ThemeService: ThemeService,
@@ -120,12 +150,14 @@ export class HomeComponent implements OnInit, DoCheck {
         numScroll: 1
       }
     ];
+
   }
 
   ngOnInit(): void {
     setTimeout(() => {
       this.loadData();
     }, 1000);
+
 
 
   }
@@ -139,8 +171,9 @@ export class HomeComponent implements OnInit, DoCheck {
       this.lang = this.translate.currentLang;
       this.loadData();
     }
-
   }
+
+
 
   getVideoIframe(url: string) {
     var video, results;
@@ -216,6 +249,12 @@ export class HomeComponent implements OnInit, DoCheck {
         link: "http://umc.edu.ve/"
       }
     ]
+  }
+
+  openPreview(img: string, name: string) {
+    this.display = true;
+    this.activeCourse = img;
+    this.activeCourseName = name;
   }
 
 }

@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
   iconMoon: boolean = false;
   lang: string = 'en';
 
+
   constructor(
     public translate: TranslateService,
     private titleCasePipe: TitleCasePipe,
@@ -33,6 +34,8 @@ export class NavbarComponent implements OnInit {
     setTimeout(() => {
       this.loadMenu();
     }, 1000);
+
+
   }
 
   loadMenu() {
@@ -151,5 +154,7 @@ export class NavbarComponent implements OnInit {
       }
     }
   }
+
+
 
 }

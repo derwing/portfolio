@@ -6,6 +6,18 @@
     text-decoration: none;
 }
 
+#go-up {
+    display: none;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: #3B82F6;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
 @media (max-width: 768px) {
     .logo {
         margin-left: 0.1rem;
