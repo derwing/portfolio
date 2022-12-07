@@ -58,7 +58,7 @@
     </div>
 </section>
 
-<section class="bg-cyan-500 mt-3 border-round">
+<section class="bg-cyan-500 mt-3 border-round" id="section2">
     <div class="grid justify-content-center work-category-grid">
         <div class="col ">
             <ul class="list-none pl-1">
@@ -124,7 +124,7 @@
         </div>
     </div>
 </section>
-<section class="surface-ground border-round mt-1">
+<section class="surface-ground border-round mt-1" id="section3">
     <h2 class="text-center pt-2">{{'section3.title' | translate}}</h2>
     <div class="card">
         <p-timeline [value]="workExperiences" align="alternate" styleClass="customized-timeline">
@@ -153,22 +153,24 @@
 <section class="bg-indigo-200 mt-3 border-round mb-6" id="section4">
     <div class="grid">
         <div class="md:col-4 hidden-xs-down">
-            <h5 class="ml-4 mb-0" [ngClass]="{'text-blue-800': !darkMode, 'text-blue-700': darkMode}">My Lates Works</h5>
-            <p class="ml-5 mt-0" [ngClass]="{'text-blue-800': !darkMode, 'text-blue-700': darkMode}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro perspiciatis repudiandae fugit quaerat laborum accusamus eveniet illum fuga, veritatis expedita eius, tenetur quas doloremque impedit! Accusamus consequatur nulla quas.</p>
+            <h5 class="ml-4 mb-0" [ngClass]="{'text-blue-800': !darkMode, 'text-blue-700': darkMode}">{{'section4.title' | translate}}</h5>
+            <p class="ml-5 mt-0" [ngClass]="{'text-blue-800': !darkMode, 'text-blue-700': darkMode}">{{'section4.subtitle' | translate}}</p>
         </div>
         <div class="col-12 md:col-8">
-            <h5 class="ml-4 mb-0 hidden-sm-up" [ngClass]="{'text-white': !darkMode, 'text-blue-700': darkMode}">My Lates Works</h5>
-            <p class="ml-5 mt-0 hidden-sm-up" [ngClass]="{'text-white': !darkMode, 'text-blue-700': darkMode}">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h5 class="ml-4 mb-0 hidden-sm-up" [ngClass]="{'text-white': !darkMode, 'text-blue-700': darkMode}">{{'section4.title' | translate}}</h5>
+            <p class="ml-5 mt-0 hidden-sm-up" [ngClass]="{'text-white': !darkMode, 'text-blue-700': darkMode}">{{'section4.subtitle' | translate}}</p>
 
             <!-- [autoplayInterval]="3000" -->
-            <p-carousel [value]="lastWorks" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
-                <ng-template let-works pTemplate="item">
-                    <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4">
-                        <p-header>
-                            <span [ngClass]="{'text-white': darkMode, 'text-blue-700': !darkMode}">{{works.name}}</span>
-                        </p-header>
-                        <img [src]="'../../../assets/images/' + works.img" class="company-logo border-round p-1 shadow-4" [height]="works.imgHeight" [ngStyle]="{'transform': 'rotate(-20deg)'}">
-                    </p-card>
+            <p-carousel [value]="lastProjects" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="6000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+                <ng-template let-project pTemplate="item">
+                    <a [href]="project.link" target="_blank" class="no-underline">
+                        <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4 text-center">
+                            <p-header>
+                                <span [ngClass]="{'text-white': darkMode, 'text-blue-700': !darkMode}">{{project.name}} <i [ngClass]="project.icon"></i> </span>
+                            </p-header>
+                            <img [src]="'../../../assets/images/projects/' + project.img" class="company-logo border-round p-1 shadow-4 mt-2" [height]="project.imgHeight">
+                        </p-card>
+                    </a>
                 </ng-template>
             </p-carousel>
 
@@ -251,6 +253,14 @@
 
         </div>
     </div>
+
+</section>
+
+<section id="section7" class="language section">
+
+</section>
+
+<section id="section8" class="setup section">
 
 </section>
 

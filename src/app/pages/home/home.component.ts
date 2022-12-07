@@ -4,6 +4,7 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { PrimeIcons } from "primeng/api";
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -21,43 +22,64 @@ export class HomeComponent implements OnInit, DoCheck {
   workExperiences = [{}];
 
   // Last Work 
-  lastWorks = [
+  lastProjects = [
     {
-      name: "AidPass.com",
-      date: "since: 15/10/2020 to:",
-      icon: PrimeIcons.HEART,
-      color: "red",
+      name: "AidPass",
+      icon: PrimeIcons.GLOBE,
       img: 'AidPassWeb.png',
       imgWidth: 150,
-      imgHeight: 100
+      imgHeight: 100,
+      link: "https://www.aidpass.com"
     },
     {
-      name: "Atlas Global Protection inc - Canada",
-      date: "since: 15/10/2020 to:",
-      icon: PrimeIcons.HEART,
-      color: "red",
-      img: 'AidPassWeb.png',
+      name: "AidPass Alert",
+      icon: PrimeIcons.ANDROID,
+      img: 'aidPass-alert.jpeg',
       imgWidth: 150,
-      imgHeight: 50
+      imgHeight: 100,
+      link: "https://play.google.com/store/apps/details?id=com.aidpass.alertapp&pli=1"
     },
     {
-      name: "Atlas Global Protection inc - Canada",
-      date: "since: 15/10/2020 to:",
-      icon: PrimeIcons.HEART,
-      color: "red",
-      img: 'AidPassWeb.png',
+      name: "First Responder",
+      icon: PrimeIcons.APPLE,
+      img: 'firstresponder-ios.jpg',
       imgWidth: 150,
-      imgHeight: 50
+      imgHeight: 100,
+      link: "https://play.google.com/store/apps/details?id=app.aidpass.firstresponder"
     },
     {
-      name: "Atlas Global Protection inc - Canada",
-      date: "since: 15/10/2020 to:",
-      icon: PrimeIcons.HEART,
-      color: "red",
-      img: 'AidPassWeb.png',
+      name: "UlaLovers IONIC",
+      icon: PrimeIcons.GLOBE,
+      img: 'ulalovers.png',
       imgWidth: 150,
-      imgHeight: 50
+      imgHeight: 100,
+      link: "https://ulalovers.com/tabs/hometab"
     },
+    {
+      name: "Rómulo Betancourt",
+      icon: PrimeIcons.GLOBE,
+      img: 'romulobetancourt.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://www.romulobetancourt.edu.ve"
+    },
+    {
+      name: "AidPass Alert",
+      icon: PrimeIcons.APPLE,
+      img: 'aidPass-alert.jpeg',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://apps.apple.com/br/app/aidpass-alert/id1628644066"
+    },
+    {
+      name: "First Responder",
+      icon: PrimeIcons.ANDROID,
+      img: 'firstresponder.jpeg',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://play.google.com/store/apps/details?id=app.aidpass.firstresponder"
+    },
+
   ];
 
   // Lates courses
@@ -77,6 +99,18 @@ export class HomeComponent implements OnInit, DoCheck {
     {
       name: 'Angular 14',
       img: 'angular.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'Ionic',
+      img: 'ionic-framework.jpg',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'JavaScript',
+      img: 'java-script.jpg',
       imgWidth: 150,
       imgHeight: 150
     },
@@ -124,8 +158,6 @@ export class HomeComponent implements OnInit, DoCheck {
   ];
 
   responsiveOptions;
-
-
 
 
   constructor(

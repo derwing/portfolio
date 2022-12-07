@@ -49,5 +49,9 @@
         "dbaccess-rol": "Jefe de Infraestructura",
         "umc-info": "Instituto Universitario de la Marina Mercante de Venezuela",
         "umc-rol": "Jefe de Soporte Técnico"
+    },
+    "section4": {
+        "title": "Mis últimos proyectos",
+        "subtitle": "En esta sección puedes ver algunos de mis proyectos de desarrollo tanto web, móvil y otros temas interesantes. (Haz clic para conocer más de ellos)"
     }
 }

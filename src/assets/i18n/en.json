@@ -49,5 +49,9 @@
         "dbaccess-rol": "Infraestructure Lead",
         "umc-info": "University Institute of the Merchant Marine of Venezuela.",
         "umc-rol": "Technical Support Manager"
+    },
+    "section4": {
+        "title": "My Lates Projects",
+        "subtitle": "In this section you can see some of my web, mobile and other interesting development projects (click to learn more about them)."
     }
 }

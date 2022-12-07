@@ -10,6 +10,7 @@ import { TimelineModule } from 'primeng/timeline';
 import { ImageModule } from 'primeng/image';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { DialogModule } from 'primeng/dialog';
+import { RatingModule } from 'primeng/rating';
 
 @NgModule({
   declarations: [],
@@ -26,7 +27,8 @@ import { DialogModule } from 'primeng/dialog';
     TimelineModule,
     ImageModule,
     ScrollTopModule,
-    DialogModule
+    DialogModule,
+    RatingModule
   ]
 })
 export class PrimengModule { }
