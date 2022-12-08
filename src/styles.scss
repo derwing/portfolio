@@ -38,6 +38,20 @@ body.dark-mode {
     padding: 0 5px!important;
 }
 
+// products section
+.setup-img img {
+    border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    margin-top: 25%;
+}
+
+.p-image-preview-indicator {
+    top: 70px!important;
+    height: 84%!important;
+    border-radius: 3rem;
+}
+
 // Global Media Querys
 @media (max-width: 575px) {
     body {
