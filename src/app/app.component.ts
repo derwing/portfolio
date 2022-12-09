@@ -54,5 +54,39 @@ export class AppComponent {
       this.themeService.switchTheme(this.theme, this.darkModeStatus);
     }
 
+    this.detectAdBlocker();
+
+  }
+
+  async detectAdBlocker() {
+    const adBlocker = await this.checkAdBlocker();
+    if (adBlocker) {
+      this.themeService.adBlocker = true;
+    }
+  }
+
+  async checkAdBlocker() {
+    let blocker;
+    async function tryRequest() {
+      try {
+        return fetch(
+          new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
+            method: 'HEAD',
+            mode: 'no-cors'
+          }))
+          .then(function (response) {
+            blocker = false;
+            return blocker;
+          }).catch(function (e) {
+            blocker = true;
+            return blocker;
+          });
+      } catch (error) {
+        console.log(error);
+        blocker = true;
+        return blocker;
+      }
+    }
+    return blocker !== undefined ? blocker : await tryRequest();
   }
 }

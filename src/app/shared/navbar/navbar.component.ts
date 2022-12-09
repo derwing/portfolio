@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit {
   theme: string = 'lara-light';
   iconMoon: boolean = false;
   lang: string = 'en';
+  showMenu: boolean = false;
 
 
   constructor(
@@ -87,6 +88,9 @@ export class NavbarComponent implements OnInit {
         ]
       },
     ];
+    setTimeout(() => {
+      this.showMenu = true;
+    }, 1000);
   }
 
   changeLanguage(type: string) {

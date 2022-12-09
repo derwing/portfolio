@@ -54,5 +54,15 @@
     "section4": {
         "title": "Mes Derniers Projets",
         "subtitle": "Dans cette section, vous pouvez voir certains de mes projets de développement web, mobile et autres projets intéressants (cliquez pour en savoir plus)."
+    },
+    "section5": {
+        "title": "Mes derniers cours et certificats",
+        "subtitle": "Croissance continue avec accent sur le développement de logiciels FrontEnd"
+    },
+    "section6": {
+        "title": "Autres Recommandations"
+    },
+    "section8": {
+        "title": "Ma station de travail"
     }
 }

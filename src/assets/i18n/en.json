@@ -53,5 +53,15 @@
     "section4": {
         "title": "My Lates Projects",
         "subtitle": "In this section you can see some of my web, mobile and other interesting development projects (click to learn more about them)."
+    },
+    "section5": {
+        "title": "My Lates Courses and Certifies",
+        "subtitle": "Continuous growth with a focus on FrontEnd software development"
+    },
+    "section6": {
+        "title": "Other Recomendations"
+    },
+    "section8": {
+        "title": "My Setup"
     }
 }

@@ -122,6 +122,12 @@ export class HomeComponent implements OnInit, DoCheck {
 
 
   // Recomendations Section
+  recomendationActive: boolean = false;
+  recomendationName: string = '';
+  recomendationImg: string = '';
+  recomendationReview: string = '';
+  recomendationCompany: string = '';
+
   recomendations = [
     {
       name: "Derwing Medina",
@@ -132,12 +138,13 @@ export class HomeComponent implements OnInit, DoCheck {
       review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
     },
     {
-      name: "Fulano de tal",
-      charge: "CEO of xxx",
-      icon: PrimeIcons.HEART,
-      color: "red",
-      img: 'AvatarPro.png',
-      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+      name: "Maria Alejandra Linares",
+      charge: "Product Owner - Rapid Ratings - Ireland",
+      company: 'www.rapidratings.com',
+      img: 'mariale.png',
+      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+      reviewExplain: 'xxxx',
+
     },
     {
       name: "Fulano de tal",
@@ -159,11 +166,14 @@ export class HomeComponent implements OnInit, DoCheck {
 
   responsiveOptions;
 
+  // setup section
+  adBlocker: boolean = false;
+
 
   constructor(
     private _sanitizer: DomSanitizer,
     private ThemeService: ThemeService,
-    private translate: TranslateService
+    private translate: TranslateService,
   ) {
     this.responsiveOptions = [
       {
@@ -189,9 +199,14 @@ export class HomeComponent implements OnInit, DoCheck {
     setTimeout(() => {
       this.loadData();
     }, 1000);
+  }
 
-
-
+  openRecomendation(recomendation: any) {
+    this.recomendationImg = recomendation.img;
+    this.recomendationName = recomendation.name;
+    this.recomendationReview = recomendation.review;
+    this.recomendationActive = true;
+    this.recomendationCompany = recomendation.company;
   }
 
   ngDoCheck(): void {
@@ -281,6 +296,8 @@ export class HomeComponent implements OnInit, DoCheck {
         link: "http://umc.edu.ve/"
       }
     ]
+
+    this.adBlocker = this.ThemeService.adBlocker
   }
 
   openPreview(img: string, name: string) {

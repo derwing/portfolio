@@ -6,8 +6,8 @@
                 <a *ngIf="darkMode" href="https://github.com/derwing" target="_blank"><img src="../../../assets/images/git-hub-white.png" alt="git hub logo" width="28px"></a>
                 <a *ngIf="!darkMode" class="ml-2" href="https://twitter.com/derwing" target="_blank"><img src="../../../assets/images/twitter-logo.png" alt="twitter logo" width="30px"></a>
                 <a *ngIf="darkMode" class="ml-2" href="https://twitter.com/derwing" target="_blank"><img src="../../../assets/images/twitter-logo-white.png" alt="twitter logo" width="30px"></a>
-                <a *ngIf="!darkMode" class="ml-2" href="https://www.freecodecamp.org/certification/derwing/responsive-web-design" target="_blank"><img src="../../../assets/images/free-code-camp.png" alt="free code camp certified" width="35px"></a>
-                <a *ngIf="darkMode" class="ml-2" href="https://www.freecodecamp.org/certification/derwing/responsive-web-design" target="_blank"><img src="../../../assets/images/free-code-camp-white.png" alt="free code camp certified" width="35px"></a>
+                <!-- <a *ngIf="!darkMode" class="ml-2" href="https://www.freecodecamp.org/certification/derwing/responsive-web-design" target="_blank"><img src="../../../assets/images/free-code-camp.png" alt="free code camp certified" width="35px"></a>
+                <a *ngIf="darkMode" class="ml-2" href="https://www.freecodecamp.org/certification/derwing/responsive-web-design" target="_blank"><img src="../../../assets/images/free-code-camp-white.png" alt="free code camp certified" width="35px"></a> -->
                 <a *ngIf="!darkMode" class="ml-2" href="https://www.linkedin.com/in/derwing/" target="_blank"><img src="../../../assets/images/linkedin-logo.png" alt="linkedin logo" width="28px"></a>
                 <a *ngIf="darkMode" class="ml-2" href="https://www.linkedin.com/in/derwing/" target="_blank"><img src="../../../assets/images/linkedin-logo-white.png" alt="linkedin logo" width="28px"></a>
                 <img src="../../../assets/images/manWithoutBG.png " class="img-hero " alt="profile photo " loading="lazy ">
@@ -181,12 +181,12 @@
 <section class="bg-cyan-500 mt-3 border-round mb-6" id="section5">
     <div class="grid">
         <div class="md:col-4 hidden-xs-down">
-            <h5 class="ml-4 mb-0"> My Lates Courses and Certifies</h5>
-            <p class="ml-5 mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro perspiciatis repudiandae fugit quaerat laborum accusamus eveniet illum fuga, veritatis expedita eius, tenetur quas doloremque impedit! Accusamus consequatur nulla quas.</p>
+            <h5 class="ml-4 mb-0">{{'section5.title' | translate }}</h5>
+            <p class="ml-5 mt-0">{{'section5.subtitle' | translate }}</p>
         </div>
         <div class="col-12 md:col-8">
-            <h5 class="ml-4 mb-0 hidden-sm-up">My Lates Courses and Certifies</h5>
-            <p class="ml-5 mt-0 hidden-sm-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h5 class="ml-4 mb-0 hidden-sm-up">{{'section5.title' | translate }}</h5>
+            <p class="ml-5 mt-0 hidden-sm-up">{{'section5.subtitle' | translate }}</p>
 
             <!-- [autoplayInterval]="3000" -->
             <p-carousel [value]="latesCourses" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="3000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
@@ -214,21 +214,21 @@
 <section class="surface-ground border-round" id="section6">
     <div class="grid justify-content-center">
         <div class="col-12 md:col-2">
-            <h5 class="ml-4 mb-0">Other Recomendations</h5>
+            <h5 class="ml-4 mb-0">{{'section6.title'| translate }}</h5>
             <div class="col">
                 <ul class="list-none">
                     <li class="mb-2">
-                        <a href="http://" class="no-underline">
+                        <a href="https://www.workana.com/freelancer/e6979a6147593ff5fd0c122d0e2047a3" class="no-underline" target="_blank">
                             <img class="vertical-align-bottom" src="../../../assets/images/workana.png" alt="web application" width="25px"> Workana
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="http://" class="no-underline">
+                        <a href="https://www.linkedin.com/in/derwing/details/skills/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABUoK5EB4c2JTiZa82GJ-QZfIKxOYoxY6ck" class="no-underline">
                             <img class="vertical-align-bottom" src="../../../assets/images/linkedin-logo.png" alt="web application" width="25px"> Linkedin
                         </a>
                     </li>
                     <li>
-                        <a href="https://es.stackoverflow.com/help/badges?tab=General&filter=earned" class="no-underline">
+                        <a href="https://es.stackoverflow.com/users/95150/derwing-medina" class="no-underline">
                             <img class="vertical-align-bottom" src="../../../assets/images/stackOverflow.png" alt="web application" width="25px"> StackOF
                         </a>
                     </li>
@@ -237,11 +237,11 @@
         </div>
         <div class="col-12 md:col-10">
             <!-- [autoplayInterval]="3000" -->
-            <p-carousel [value]="recomendations" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="5000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+            <p-carousel [value]="recomendations" class="pointer" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="5000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
                 <ng-template let-recomendation pTemplate="item">
-                    <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4">
+                    <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4" (click)="openRecomendation(recomendation)">
                         <p-header>
-                            <p-avatar [image]="'../../../assets/images/' + recomendation.img" shape="circle" class="avatar" size="xlarge"></p-avatar>
+                            <p-avatar [image]="'../../../assets/images/recomendations/' + recomendation.img" shape="circle" class="avatar" size="xlarge"></p-avatar>
                         </p-header>
                         <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}}</p>
                         <small class="avatar-charge text-color-secondary">{{recomendation.charge}}</small>
@@ -250,19 +250,32 @@
                     </p-card>
                 </ng-template>
             </p-carousel>
-
+            <p-dialog [header]="recomendationName" [(visible)]="recomendationActive">
+                <div class="grid">
+                    <div class="col">
+                        <img [src]="'../../../assets/images/recomendations/' + recomendationImg" class="responsive_img">
+                    </div>
+                    <div class="col">
+                        <p class="review-text mt-1">{{recomendationReview}}</p>
+                        <div class="text-right">
+                            <a class="text-right" href="recomendationCompany" target="_blank">{{recomendationCompany}}</a>
+                        </div>
+                    </div>
+                </div>
+            </p-dialog>
         </div>
     </div>
 
 </section>
 
-<section id="section7" class="language section">
+<section id="section7" class="bg-indigo-200 border-round language section">
 
 </section>
 
-<section id="section8" class="bg-indigo-200 border-round setup section mt-3">
+<section id="section8" class="bg-cyan-500 border-round setup section mt-3" *ngIf="!adBlocker">
     <!-- I want to use this section for sale productos, right now I only show my setup products -->
-    <h2 class="text-center">My Setup</h2>
+    <!-- this section is only displayed if the user does not have an ad blocker. -->
+    <h2 class="text-center pt-2">{{'section8.title' | translate }}</h2>
     <div class="grid justify-content-center">
         <div class="col-12 md:col-6 lg:col-6 xl:col-6  products text-center">
             <iframe class="border-round ml-1 mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B0B1S3GC8J&asins=B0B1S3GC8J&linkId=4dd63d497fa88752b1380ae1a89beeb3&show_border=true&link_opens_in_new_window=true"></iframe>

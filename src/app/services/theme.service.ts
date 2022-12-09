@@ -6,6 +6,7 @@ import { Inject, Injectable } from '@angular/core';
 })
 export class ThemeService {
   darkMode: boolean = false;
+  adBlocker: boolean = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document) { }
