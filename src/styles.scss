@@ -56,6 +56,11 @@ body.dark-mode {
     border-radius: 3rem;
 }
 
+// Recomendation dialog
+.recomendationDialog .p-dialog {
+    max-width: 70%!important;
+}
+
 // Global Media Querys
 @media (max-width: 575px) {
     body {

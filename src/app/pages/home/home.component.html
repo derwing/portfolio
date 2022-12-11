@@ -245,20 +245,20 @@
                         </p-header>
                         <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}}</p>
                         <small class="avatar-charge text-color-secondary">{{recomendation.charge}}</small>
-                        <p class="review-text mt-1">{{recomendation.review}}</p>
+                        <p class="review-text mt-1">{{recomendation.review | slice:0:41}}...</p>
                         <!-- <img [src]="'../../../assets/images/' + works.img" class="company-logo border-round p-1 shadow-4" [height]="works.imgHeight" [ngStyle]="{'transform': 'rotate(-20deg)'}"> -->
                     </p-card>
                 </ng-template>
             </p-carousel>
-            <p-dialog [header]="recomendationName" [(visible)]="recomendationActive">
+            <p-dialog [header]="recomendationName" [(visible)]="recomendationActive" class="recomendationDialog">
                 <div class="grid">
-                    <div class="col">
-                        <img [src]="'../../../assets/images/recomendations/' + recomendationImg" class="responsive_img">
+                    <div class="col border-round text-center">
+                        <img [src]="'../../../assets/images/recomendations/' + recomendationImg" class="border-round review-img-big">
                     </div>
-                    <div class="col">
-                        <p class="review-text mt-1">{{recomendationReview}}</p>
+                    <div class="col-8">
+                        <p class="review-text mt-1 text-left">{{recomendationReview}}</p>
                         <div class="text-right">
-                            <a class="text-right" href="recomendationCompany" target="_blank">{{recomendationCompany}}</a>
+                            <a class="text-right" [href]="'https://' + recomendationCompany" target="_blank">{{recomendationCompany}}</a>
                         </div>
                     </div>
                 </div>

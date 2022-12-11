@@ -130,12 +130,12 @@ export class HomeComponent implements OnInit, DoCheck {
 
   recomendations = [
     {
-      name: "Derwing Medina",
-      charge: "CEO of xxx",
-      icon: PrimeIcons.HEART,
+      name: "Juan Bustamante",
+      charge: "Member of Technical Staff 2",
+      company: 'www.VMware.com',
       color: "red",
-      img: 'AvatarPro.png',
-      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+      img: 'juan-bustamante.png',
+      review: "I've been working with Derwing for almost 15 years, he has an insatiable desire to learn, and he demonstrated this by improving his skills as a web developer, even though he came from an infrastructure background. His skills as an entrepreneur are also proven. For all this, Derwing is a valuable member of any IT team and you can only expect the best from him. Derwing’s personality is also impressive. He acts with generosity and compassion and is well-respected by his peers. He is a natural leader and was such a joy to have on my team.",
     },
     {
       name: "Maria Alejandra Linares",
