@@ -1,0 +1,25 @@
+    .text-webkit {
+        text-align: -webkit-center;
+    }
+    
+    .img-card {
+        width: 50%;
+        margin: 10% 0;
+    }
+    
+    .card-button {
+        width: 100%!important;
+    }
+    
+    .icon-color {
+        color: yellow;
+    }
+    
+    @media (max-width: 768px) {
+        .work-category-grid {
+            flex-direction: column-reverse;
+        }
+        .li-work-categories {
+            margin-right: 0.5rem;
+        }
+    }

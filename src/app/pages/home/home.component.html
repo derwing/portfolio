@@ -1,4 +1,4 @@
-<section class="hero-content mt-2" id="section1">
+<section class="hero-content mt-2 mb-3" id="section1">
     <div class="container col-8 md:col-10 md:col-offset-1">
         <div class="grid text-col">
             <div class="col md:col-6 img-col text-right hidden-xs-down">
@@ -58,249 +58,44 @@
     </div>
 </section>
 
-<section class="bg-cyan-500 mt-3 border-round" id="section2">
-    <div class="grid justify-content-center work-category-grid">
-        <div class="col ">
-            <ul class="list-none pl-1">
-                <li class="mb-4 li-work-categories">
-                    <p-card class="section-whatcando">
-                        <div class="grid">
-                            <div class="col text-center hidden-xs-down">
-                                <img src="https://cdn-icons-png.flaticon.com/512/1329/1329016.png" alt="web application icon" width="100px">
-                            </div>
-                            <div class="col-9  align-items-center">
-                                <h2 class="mt-0">{{'section2.web-app-programming' | translate}}</h2>
-                                <p><span class="text-600">{{'section2.stack' | translate}}</span> HTML, CSS, SCSS, Bootstrap, JS, TS, Angular, Ionic, PrimeNg, Material </p>
-                            </div>
-                        </div>
-                    </p-card>
-                </li>
-                <li class="mb-4 li-work-categories">
-                    <p-card class="section-whatcando">
-                        <div class="grid">
-                            <div class="col text-center hidden-xs-down">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2645/2645725.png" alt="Mobile developer icon" width="100px">
-                            </div>
-                            <div class="col-9 align-items-center">
-                                <h2 class="mt-0">{{'section2.mobile-app-programming' | translate}}</h2>
-                                <p><span class="text-600">{{'section2.stack' | translate}}</span> Ionic with Angular, Dart/Flutter </p>
-                            </div>
-                        </div>
-                    </p-card>
-                </li>
-                <li class="mb-4 li-work-categories">
-                    <p-card class="section-whatcando">
-                        <div class="grid">
-                            <div class="col text-center hidden-xs-down">
-                                <img src="https://cdn-icons-png.flaticon.com/512/6119/6119533.png" alt="IOT developer icon" width="100px">
-                            </div>
-                            <div class="col-9 align-items-center">
-                                <h2 class="mt-0">{{'section2.iot-programming' | translate}}</h2>
-                                <p><span class="text-600">{{'section2.stack' | translate}}</span> Dart/Flutter </p>
-                            </div>
-                        </div>
-                    </p-card>
-                </li>
-                <li class="mb-4 li-work-categories">
-                    <p-card class="section-whatcando">
-                        <div class="grid">
-                            <div class="col text-center hidden-xs-down">
-                                <img src="https://cdn-icons-png.flaticon.com/512/5687/5687273.png" alt="Dev Ops Icon" width="100px">
-                            </div>
-                            <div class="col-9 align-items-center">
-                                <h2 class="mt-0">{{'section2.devops' | translate}}</h2>
-                                <p><span class="text-600">{{'section2.stack' | translate}}</span> Linux, Windows, Cloud, Confluence, Jira, GitHub, Kubernetes</p>
-                            </div>
-                        </div>
-                    </p-card>
-                </li>
-            </ul>
-        </div>
-        <div class="col">
-            <div class="justify-content-center text-center">
-                <h2>{{'section2.title' | translate }}</h2>
-                <p class="px-5">{{'section2.subtitle' | translate}}</p>
-            </div>
-        </div>
-    </div>
+<section class="bg-cyan-500 mb-3 border-round" id="section2">
+    <app-work-areas></app-work-areas>
 </section>
-<section class="surface-ground border-round mt-1" id="section3">
-    <h2 class="text-center pt-2">{{'section3.title' | translate}}</h2>
-    <div class="card">
-        <p-timeline [value]="workExperiences" align="alternate" styleClass="customized-timeline">
-            <ng-template pTemplate="marker" let-experiences>
-                <span class="custom-marker p-shadow-2" [style.backgroundColor]="experiences.color">
-                    <i [ngClass]="experiences.icon"></i>
-                </span>
-            </ng-template>
-            <ng-template pTemplate="content" let-experience>
-                <div class="content-card">
-                    <img [src]="'../../../assets/images/' + experience.img" [width]="experience.imgWidth" class="company-logo border-round p-1" [width]="100">
-                    <br>
-                    <small class="text-color-secondary">{{experience.name}}</small>
-                    <br>
-                    <small>{{experience.rol}}</small>
-                    <br>
-                    <small>{{experience.date}}</small>
-                    <p>{{experience.text}}</p>
-                    <a pButton label="{{'section3.read-more' | translate}}" class="p-button-text" [href]="experience.link" target="_blank"></a>
-                </div>
-            </ng-template>
-        </p-timeline>
-    </div>
+<section class="surface-ground border-round mb-3" id="section3">
+    <app-work-experience></app-work-experience>
 </section>
 
-<section class="bg-indigo-200 mt-3 border-round mb-6" id="section4">
-    <div class="grid">
-        <div class="md:col-4 hidden-xs-down">
-            <h5 class="ml-4 mb-0" [ngClass]="{'text-blue-800': !darkMode, 'text-blue-700': darkMode}">{{'section4.title' | translate}}</h5>
-            <p class="ml-5 mt-0" [ngClass]="{'text-blue-800': !darkMode, 'text-blue-700': darkMode}">{{'section4.subtitle' | translate}}</p>
-        </div>
-        <div class="col-12 md:col-8">
-            <h5 class="ml-4 mb-0 hidden-sm-up" [ngClass]="{'text-white': !darkMode, 'text-blue-700': darkMode}">{{'section4.title' | translate}}</h5>
-            <p class="ml-5 mt-0 hidden-sm-up" [ngClass]="{'text-white': !darkMode, 'text-blue-700': darkMode}">{{'section4.subtitle' | translate}}</p>
-
-            <!-- [autoplayInterval]="3000" -->
-            <p-carousel [value]="lastProjects" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="6000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
-                <ng-template let-project pTemplate="item">
-                    <a [href]="project.link" target="_blank" class="no-underline">
-                        <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4 text-center">
-                            <p-header>
-                                <span [ngClass]="{'text-white': darkMode, 'text-blue-700': !darkMode}">{{project.name}} <i [ngClass]="project.icon"></i> </span>
-                            </p-header>
-                            <img [src]="'../../../assets/images/projects/' + project.img" class="company-logo border-round p-1 shadow-4 mt-2" [height]="project.imgHeight">
-                        </p-card>
-                    </a>
-                </ng-template>
-            </p-carousel>
-
-        </div>
-    </div>
+<section class="bg-indigo-200 mt-3 border-round mb-3" id="section4">
+    <app-latest-projects></app-latest-projects>
 </section>
 
-<section class="bg-cyan-500 mt-3 border-round mb-6" id="section5">
-    <div class="grid">
-        <div class="md:col-4 hidden-xs-down">
-            <h5 class="ml-4 mb-0">{{'section5.title' | translate }}</h5>
-            <p class="ml-5 mt-0">{{'section5.subtitle' | translate }}</p>
-        </div>
-        <div class="col-12 md:col-8">
-            <h5 class="ml-4 mb-0 hidden-sm-up">{{'section5.title' | translate }}</h5>
-            <p class="ml-5 mt-0 hidden-sm-up">{{'section5.subtitle' | translate }}</p>
-
-            <!-- [autoplayInterval]="3000" -->
-            <p-carousel [value]="latesCourses" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="3000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
-                <ng-template let-course pTemplate="item">
-                    <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4 text-center">
-                        <p-header>
-                            <span [ngClass]="{'text-white': darkMode, 'text-blue-700': !darkMode}">{{course.name}}</span>
-                        </p-header>
-                        <!-- <img  class="company-logo border-round p-1 shadow-4" > -->
-                        <p-image [src]="'../../../assets/images/courses/' + course.img" [height]="course.imgHeight" (click)="openPreview(course.img, course.name)" class="course-img">
-                            <!-- <ng-template pTemplate="indicator">
-                                Indicator Content
-                            </ng-template> -->
-                        </p-image>
-                        <!-- <p-image src="../../../assets/images/courses/dart.png" alt="Image" width="250" [preview]="true"></p-image> -->
-                    </p-card>
-                </ng-template>
-            </p-carousel>
-
-        </div>
-    </div>
+<section class="bg-cyan-500 mt-3 border-round mb-3" id="section5">
+    <app-latest-courses></app-latest-courses>
 </section>
-
-
 <section class="surface-ground border-round" id="section6">
-    <div class="grid justify-content-center">
-        <div class="col-12 md:col-2">
-            <h5 class="ml-4 mb-0">{{'section6.title'| translate }}</h5>
-            <div class="col">
-                <ul class="list-none">
-                    <li class="mb-2">
-                        <a href="https://www.workana.com/freelancer/e6979a6147593ff5fd0c122d0e2047a3" class="no-underline" target="_blank">
-                            <img class="vertical-align-bottom" src="../../../assets/images/workana.png" alt="web application" width="25px"> Workana
-                        </a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="https://www.linkedin.com/in/derwing/details/skills/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABUoK5EB4c2JTiZa82GJ-QZfIKxOYoxY6ck" class="no-underline">
-                            <img class="vertical-align-bottom" src="../../../assets/images/linkedin-logo.png" alt="web application" width="25px"> Linkedin
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://es.stackoverflow.com/users/95150/derwing-medina" class="no-underline">
-                            <img class="vertical-align-bottom" src="../../../assets/images/stackOverflow.png" alt="web application" width="25px"> StackOF
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-12 md:col-10">
-            <!-- [autoplayInterval]="3000" -->
-            <p-carousel [value]="recomendations" class="pointer" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="5000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
-                <ng-template let-recomendation pTemplate="item">
-                    <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4" (click)="openRecomendation(recomendation)">
-                        <p-header>
-                            <p-avatar [image]="'../../../assets/images/recomendations/' + recomendation.img" shape="circle" class="avatar" size="xlarge"></p-avatar>
-                        </p-header>
-                        <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}}</p>
-                        <small class="avatar-charge text-color-secondary">{{recomendation.charge}}</small>
-                        <p class="review-text mt-1">{{recomendation.review | slice:0:41}}...</p>
-                        <!-- <img [src]="'../../../assets/images/' + works.img" class="company-logo border-round p-1 shadow-4" [height]="works.imgHeight" [ngStyle]="{'transform': 'rotate(-20deg)'}"> -->
-                    </p-card>
-                </ng-template>
-            </p-carousel>
-            <p-dialog [header]="recomendationName" [(visible)]="recomendationActive" class="recomendationDialog">
-                <div class="grid">
-                    <div class="col border-round text-center">
-                        <img [src]="'../../../assets/images/recomendations/' + recomendationImg" class="border-round review-img-big">
-                    </div>
-                    <div class="col-8">
-                        <p class="review-text mt-1 text-left">{{recomendationReview}}</p>
-                        <div class="text-right">
-                            <a class="text-right" [href]="'https://' + recomendationCompany" target="_blank">{{recomendationCompany}}</a>
-                        </div>
-                    </div>
-                </div>
-            </p-dialog>
-        </div>
-    </div>
-
+    <app-recomendations></app-recomendations>
+    <!-- these recommendations are shown in random order -->
 </section>
 
-<section id="section7" class="bg-indigo-200 border-round language section">
+<!-- <section id="section7" class="bg-indigo-200 border-round language section">
 
-</section>
+</section> -->
 
 <section id="section8" class="bg-cyan-500 border-round setup section mt-3" *ngIf="!adBlocker">
     <!-- I want to use this section for sale productos, right now I only show my setup products -->
     <!-- this section is only displayed if the user does not have an ad blocker. -->
-    <h2 class="text-center pt-2">{{'section8.title' | translate }}</h2>
-    <div class="grid justify-content-center">
-        <div class="col-12 md:col-6 lg:col-6 xl:col-6  products text-center">
-            <iframe class="border-round ml-1 mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B0B1S3GC8J&asins=B0B1S3GC8J&linkId=4dd63d497fa88752b1380ae1a89beeb3&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B09TK5C14F&asins=B09TK5C14F&linkId=f1b068dda51e917eced35cc87b748bec&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B08HH3FTYT&asins=B08HH3FTYT&linkId=7931e768161ddcbc772c261771dbebc3&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B07GRV7LBB&asins=B07GRV7LBB&linkId=749aa4c3701f139fe494e13f3bb64dc2&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B0B1ZYKTVY&asins=B0B1ZYKTVY&linkId=9436aaa540008cf991a77edc3ffd54d5&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B09V735SQV&asins=B09V735SQV&linkId=ed1d0f6a1c3831156e727643632eca76&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B07DNB98HH&asins=B07DNB98HH&linkId=835cb54161e95e05c6f4b2904f213a30&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B07J9NG8MS&asins=B07J9NG8MS&linkId=3396a676670167807365b7551e3e1c74&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=en_US&marketplace=amazon&region=US&placement=B07SBXVCTK&asins=B07SBXVCTK&linkId=9bc8134b3347291f36a32789a3a72853&show_border=true&link_opens_in_new_window=true"></iframe>
-            <iframe class="border-round mr-1" sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=derwingmedina-20&language=es_US&marketplace=amazon&region=US&placement=B07ZV8LQSC&asins=B07ZV8LQSC&linkId=6aec657a27769b785a92587204746c23&show_border=true&link_opens_in_new_window=true"></iframe>
-        </div>
-        <div class="col-4 text-center img-setup hidden-xs-down">
-            <p-image class="setup-img" src="../../../assets/images/setup.jpg" alt="setup" width="250" [preview]="true"></p-image>
-        </div>
-    </div>
+    <app-products></app-products>
 
 </section>
 
-<p-dialog [header]="activeCourseName" [(visible)]="display">
-    <img [src]="'../../../assets/images/courses/' + activeCourse" class="responsive_img">
-</p-dialog>
+
 
 <footer>
     <hr>
-    <span><span class="copy-left">©</span>Copyleft 2022 Derwing Medina - Licence Creative Commons</span>
+    <span>
+        <span class="copy-left ml-3">©</span>Copyleft 2022 Derwing Medina - Licence Creative Commons - created using:
+    <i class="fa-brands fa-angular" title="Angular"></i>
+    <i class="ml-1 pi pi-prime text-gray-700" title="PrimeNG"></i>
+    <img class="ml-1" src="../../../assets/images/typescript-logo.svg" alt="typescript-logo" height="15px" title="TypeScript">
+    </span>
 </footer>

@@ -1,0 +1,23 @@
+<h2 class="text-center pt-2">{{'section3.title' | translate}}</h2>
+<div class="card">
+    <p-timeline [value]="workExperiences" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-experiences>
+            <span class="custom-marker p-shadow-2" [style.backgroundColor]="experiences.color">
+                    <i [ngClass]="experiences.icon"></i>
+                </span>
+        </ng-template>
+        <ng-template pTemplate="content" let-experience>
+            <div class="content-card">
+                <img [src]="'../../../assets/images/' + experience.img" [width]="experience.imgWidth" class="company-logo border-round p-1" [width]="100">
+                <br>
+                <small class="text-color-secondary">{{experience.name}}</small>
+                <br>
+                <small>{{experience.rol}}</small>
+                <br>
+                <small>{{experience.date}}</small>
+                <p>{{experience.text}}</p>
+                <a pButton label="{{'section3.read-more' | translate}}" class="p-button-text" [href]="experience.link" target="_blank"></a>
+            </div>
+        </ng-template>
+    </p-timeline>
+</div>

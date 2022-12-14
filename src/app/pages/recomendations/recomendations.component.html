@@ -1,0 +1,51 @@
+<div class="grid justify-content-center">
+    <div class="col-12 lg:col-10">
+        <p-carousel [value]="recomendations" class="pointer" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="5000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+            <ng-template let-recomendation pTemplate="item">
+                <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4" (click)="openRecomendation(recomendation)">
+                    <p-header class="recomendation-header-img">
+                        <p-avatar [image]="'../../../assets/images/recomendations/' + recomendation.img" shape="circle" class="avatar" size="xlarge"></p-avatar>
+                    </p-header>
+                    <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}}</p>
+                    <small class="avatar-charge text-color-secondary">{{recomendation.charge}}</small>
+                    <p class="review-text mt-1">{{recomendation.review | slice:0:41}}...</p>
+                </p-card>
+            </ng-template>
+        </p-carousel>
+        <p-dialog [header]="recomendationName" [(visible)]="recomendationActive" class="recomendationDialog">
+            <div class="grid">
+                <div class="col border-round text-center hidden-xs-down">
+                    <img [src]="'../../../assets/images/recomendations/' + recomendationImg" class="border-round review-img-big">
+                </div>
+                <div class="col-12 md:col-8 lg:col-8">
+                    <p class="review-text mt-1 text-left">{{recomendationReview}}</p>
+                    <div class="text-right">
+                        <a class="text-right" [href]="'https://' + recomendationCompany" target="_blank">{{recomendationCompany}}</a>
+                    </div>
+                </div>
+            </div>
+        </p-dialog>
+    </div>
+    <div class="col-12 md:col-2">
+        <h5 class="mb-0">{{'section6.title'| translate }}</h5>
+        <div class="col">
+            <ul class="list-none pl-1">
+                <li class="mb-2">
+                    <a href="https://www.workana.com/freelancer/e6979a6147593ff5fd0c122d0e2047a3" class="no-underline" target="_blank">
+                        <img class="vertical-align-bottom" src="../../../assets/images/workana.png" alt="web application" width="25px"> Workana
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="https://www.linkedin.com/in/derwing/details/skills/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABUoK5EB4c2JTiZa82GJ-QZfIKxOYoxY6ck" class="no-underline">
+                        <img class="vertical-align-bottom" src="../../../assets/images/linkedin-logo.png" alt="web application" width="25px"> Linkedin
+                    </a>
+                </li>
+                <li>
+                    <a href="https://es.stackoverflow.com/users/95150/derwing-medina" class="no-underline">
+                        <img class="vertical-align-bottom" src="../../../assets/images/stackOverflow.png" alt="web application" width="25px"> StackOF
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

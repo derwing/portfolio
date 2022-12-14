@@ -1,0 +1,12 @@
+    // Course section
+    .course-img {
+        cursor: pointer;
+    }
+    
+    .responsive_img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-height: 450px;
+        /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
+    }

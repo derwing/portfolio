@@ -1,0 +1,29 @@
+// Recomendations sections
+.recomendation-header-img {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    position: absolute;
+    top: 1px;
+}
+
+.avatar-name {
+    margin-top: 45px;
+    line-height: 0.9;
+}
+
+.avatar-charge,
+.avatar-name {
+    display: block;
+    text-align: center;
+}
+
+.review-text {
+    text-align: center;
+}
+
+.review-img-big {
+    width: 80%;
+}

@@ -111,6 +111,16 @@ body.dark-mode {
     }
 }
 
+@media (min-width: 1600px) {
+    .container {
+        background-size: auto;
+    }
+    .img-hero {
+        width: 440px;
+        height: 525px;
+    }
+}
+
 @media (min-width: 1200px) {
     .hidden-xl-up {
         display: none !important;
