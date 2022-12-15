@@ -26,7 +26,7 @@ export class WorkExperienceComponent implements OnInit {
       {
         name: "Atlas Global Protection inc - Canada",
         rol: this.translate.instant('section3.aidpass-rol'),
-        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 30/1/2023`,
+        date: `${this.translate.instant('section3.since')} 11/2019 ${this.translate.instant('section3.to')} -`,
         icon: PrimeIcons.HEART,
         color: "red",
         img: 'aidpass-logo.svg',
@@ -36,7 +36,7 @@ export class WorkExperienceComponent implements OnInit {
       {
         name: "Soluciones Tecnológicas ConexVen - Venezuela",
         rol: this.translate.instant('section3.conexven-rol'),
-        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 15/10/2020`,
+        date: `${this.translate.instant('section3.since')} 01/2012 ${this.translate.instant('section3.to')} 11/2019`,
         icon: PrimeIcons.WIFI,
         color: "#673AB7",
         img: 'conexven-logo.png',
@@ -47,17 +47,28 @@ export class WorkExperienceComponent implements OnInit {
       {
         name: "DBACCESS - Venezuela",
         rol: this.translate.instant('section3.dbaccess-rol'),
-        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 15/10/2020`,
+        date: `${this.translate.instant('section3.since')} 01/2006 ${this.translate.instant('section3.to')} 12/2011`,
         icon: PrimeIcons.CODE,
         color: "#FF9800",
         img: 'dbaccess-logo.webp',
         text: this.translate.instant('section3.dbaccess-info'),
         link: "https://dbaccess.com/"
       },
+      // {
+      //   name: "Soluciones Tecnológicas ConexVen - Venezuela",
+      //   rol: this.translate.instant('section3.conexven-rol'),
+      //   date: `${this.translate.instant('section3.since')} 01/2004 ${this.translate.instant('section3.to')} 12/2005`,
+      //   icon: PrimeIcons.WIFI,
+      //   color: "#673AB7",
+      //   img: 'conexven-logo.png',
+      //   text: this.translate.instant('section3.conexven-info'),
+      //   link: "https://conexven.wixsite.com/stconexven"
+
+      // },
       {
         name: "Universidad Maritma del Caribe - Venezuela",
         rol: this.translate.instant('section3.umc-rol'),
-        date: `${this.translate.instant('section3.since')} 15/10/2020 ${this.translate.instant('section3.to')} 15/10/2020`,
+        date: `${this.translate.instant('section3.since')} 01/1999 ${this.translate.instant('section3.to')} 11/2003`,
         icon: PrimeIcons.BOOK,
         color: "#607D8B",
         img: 'logo_umc.png',
