@@ -46,6 +46,18 @@ export class LatestCoursesComponent implements DoCheck {
       imgWidth: 150,
       imgHeight: 150
     },
+    {
+      name: 'Google Web Development',
+      img: 'GoogleActivateIntroProgramming.jpeg',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'ESET RA',
+      img: 'eset-remote-administrator.jpeg',
+      imgWidth: 150,
+      imgHeight: 150
+    },
   ]
 
   display: boolean = false;

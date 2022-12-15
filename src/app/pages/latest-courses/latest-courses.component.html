@@ -1,14 +1,25 @@
 <div class="grid">
-    <div class="md:col-4 hidden-xs-down">
+    <div class="md:col-4 hidden-xs-down p-1">
         <h5 class="ml-4 mb-0">{{'section5.title' | translate }}</h5>
         <p class="ml-5 mt-0">{{'section5.subtitle' | translate }}</p>
     </div>
-    <div class="col-12 md:col-8">
-        <h5 class="ml-4 mb-0 hidden-sm-up">{{'section5.title' | translate }}</h5>
-        <p class="ml-5 mt-0 hidden-sm-up">{{'section5.subtitle' | translate }}</p>
-        <p-carousel [value]="latesCourses" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="3000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+    <div class="col-12 md:col-8 p-1">
+        <h5 class="ml-4 mb-0 hidden-sm-up mt-1">{{'section5.title' | translate }}</h5>
+        <p class="ml-5 mt-0 hidden-sm-up mb-0">{{'section5.subtitle' | translate }}</p>
+        <p-carousel class="hidden-xs-down" [value]="latesCourses" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="3000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
             <ng-template let-course pTemplate="item">
                 <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4 text-center">
+                    <p-header>
+                        <span [ngClass]="{'text-white': darkMode, 'text-blue-700': !darkMode}">{{course.name}}</span>
+                    </p-header>
+                    <p-image [src]="'../../../assets/images/courses/' + course.img" [height]="course.imgHeight" (click)="openPreview(course.img, course.name)" class="course-img"></p-image>
+                </p-card>
+            </ng-template>
+        </p-carousel>
+        <!-- Mobile -->
+        <p-carousel class="hidden-sm-up" [value]="latesCourses" styleClass="custom-carousel" [numVisible]="1" [autoplayInterval]="3000" [numScroll]="1" [showIndicators]="false" orientation="vertical" verticalViewPortHeight="240px" [circular]="true" [responsiveOptions]="responsiveOptions">
+            <ng-template let-course pTemplate="item">
+                <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 mx-4 text-center">
                     <p-header>
                         <span [ngClass]="{'text-white': darkMode, 'text-blue-700': !darkMode}">{{course.name}}</span>
                     </p-header>

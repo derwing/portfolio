@@ -1,12 +1,12 @@
 <div class="grid justify-content-center">
     <div class="col-12 lg:col-10">
-        <p-carousel [value]="recomendations" class="pointer" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="5000" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+        <p-carousel [value]="recomendations" class="pointer" styleClass="custom-carousel" [numVisible]="3" [autoplayInterval]="5000" [numScroll]="1" [circular]="true" [showNavigators]="false" [responsiveOptions]="responsiveOptions">
             <ng-template let-recomendation pTemplate="item">
                 <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4" (click)="openRecomendation(recomendation)">
                     <p-header class="recomendation-header-img">
                         <p-avatar [image]="'../../../assets/images/recomendations/' + recomendation.img" shape="circle" class="avatar" size="xlarge"></p-avatar>
                     </p-header>
-                    <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}}</p>
+                    <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}} <img [src]="'../../../assets/images/recomendations/' + recomendation.companyLogo" [alt]="recomendation.company" width="80px"></p>
                     <small class="avatar-charge text-color-secondary">{{recomendation.charge}}</small>
                     <p class="review-text mt-1">{{recomendation.review | slice:0:41}}...</p>
                 </p-card>
@@ -20,7 +20,7 @@
                 <div class="col-12 md:col-8 lg:col-8">
                     <p class="review-text mt-1 text-left">{{recomendationReview}}</p>
                     <div class="text-right">
-                        <a class="text-right" [href]="'https://' + recomendationCompany" target="_blank">{{recomendationCompany}}</a>
+                        <a class="text-right" [href]="'https://' + recomendationCompany" target="_blank"><img [src]="'../../../assets/images/recomendations/' + recomendationCompanyLogo" [alt]="recomendationCompany" width="100px"></a>
                     </div>
                 </div>
             </div>
