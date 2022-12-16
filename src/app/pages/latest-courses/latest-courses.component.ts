@@ -58,6 +58,18 @@ export class LatestCoursesComponent implements DoCheck {
       imgWidth: 150,
       imgHeight: 150
     },
+    {
+      name: 'ESET Server Solutions',
+      img: 'eset-server-solutions.jpeg',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'ESET Sales SA',
+      img: 'sales-sa.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
   ]
 
   display: boolean = false;
