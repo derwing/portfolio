@@ -58,7 +58,7 @@ body.dark-mode {
 
 // Recomendation dialog
 .recomendationDialog .p-dialog {
-    max-width: 70%!important;
+    max-width: 45%!important;
 }
 
 // Global Media Querys
@@ -84,6 +84,13 @@ body.dark-mode {
 @media (max-width: 767px) {
     .hidden-sm-down {
         display: none !important;
+    }
+    // Recomendation dialog
+    .recomendationDialog .p-dialog {
+        max-width: 80%!important;
+        h2 {
+            font-size: 1em;
+        }
     }
 }
 
