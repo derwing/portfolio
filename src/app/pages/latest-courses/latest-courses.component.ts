@@ -41,6 +41,12 @@ export class LatestCoursesComponent implements DoCheck {
       imgHeight: 150
     },
     {
+      name: 'JavaScript Animations',
+      img: 'js-animations-grasshopper.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
       name: 'Programming Logic',
       img: 'programming.png',
       imgWidth: 150,

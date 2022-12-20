@@ -25,7 +25,7 @@ export class RecomendationsComponent implements OnInit {
       company: 'www.rapidratings.com',
       companyLogo: "rapidratings_logo.png",
       img: 'mariale.png',
-      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+      review: 'Derwing and I were part of the team that worked for an important client. He was responsible for maintaining the infrastructure and deploying all our releases; as a professional Derwing likes challenges and is always open to learn new things, that is how he even managed some aspects of our applications’ databases. Derwing understand how important is to manage a relationship with clients and also has a high standard when performing his job. I would recommend Derwing 100% and I know he will bring to any team he works with his knowledge, openness and desire to deliver excellence.',
       reviewExplain: 'xxxx',
 
     },
