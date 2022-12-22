@@ -49,14 +49,14 @@ export class NavbarComponent implements OnInit {
       {
         label: this.titleCasePipe.transform(this.translate.instant('navbar.menu.projects')),
         icon: 'pi pi-fw pi-desktop',
-        url: '#section3',
+        url: '#section4',
         target: '_self'
       },
-      {
-        label: this.titleCasePipe.transform(this.translate.instant('navbar.menu.education')),
-        icon: 'pi pi-fw pi-book',
-        routerLink: 'education'
-      },
+      // {
+      //   label: this.titleCasePipe.transform(this.translate.instant('navbar.menu.education')),
+      //   icon: 'pi pi-fw pi-book',
+      //   routerLink: 'education'
+      // },
       {
         label: 'GitHub',
         icon: 'pi pi-fw pi-github',
