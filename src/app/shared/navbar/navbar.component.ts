@@ -61,10 +61,10 @@ export class NavbarComponent implements OnInit {
         label: 'GitHub',
         icon: 'pi pi-fw pi-github',
         url: 'https://github.com/derwing',
-        items: [
-          { label: 'Angular', icon: 'fa-brands fa-angular', iconClass: 'fa-brands fa-angular' },
-          { label: 'Ionic', icon: 'pi pi-fw pi-refresh' }
-        ]
+        // items: [
+        //   { label: 'Angular', icon: 'fa-brands fa-angular', iconClass: 'fa-brands fa-angular' },
+        //   { label: 'Ionic', icon: 'pi pi-fw pi-refresh' }
+        // ]
       },
       {
         label: this.titleCasePipe.transform(this.translate.instant('navbar.menu.language')),
