@@ -63,5 +63,8 @@
     },
     "section8": {
         "title": "My Setup"
+    },
+    "footer": {
+        "create-using": "created using:"
     }
 }

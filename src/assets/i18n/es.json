@@ -63,5 +63,8 @@
     },
     "section8": {
         "title": "Mi estación de trabajo"
+    },
+    "footer": {
+        "create-using": "creado usando:"
     }
 }

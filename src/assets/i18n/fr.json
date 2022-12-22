@@ -38,7 +38,7 @@
     },
 
     "section3": {
-        "Titre": "Expérience professionnelle",
+        "title": "Expérience professionnelle",
         "since": "Depuis:",
         "to": "à:",
         "read-more": "à propos de cette société",
@@ -64,5 +64,8 @@
     },
     "section8": {
         "title": "Ma station de travail"
+    },
+    "footer": {
+        "create-using": "créé en utilisant:"
     }
 }
