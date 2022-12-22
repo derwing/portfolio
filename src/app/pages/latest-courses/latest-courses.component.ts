@@ -41,6 +41,24 @@ export class LatestCoursesComponent implements DoCheck {
       imgHeight: 150
     },
     {
+      name: 'JavaScript Fundamentals',
+      img: 'js-fundamentals-grasshopper.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'JavaScript Fundamentals II',
+      img: 'js-fundamentals2-grasshopper.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
+      name: 'JavaScript Arrays',
+      img: 'js-arrays-grasshopper.png',
+      imgWidth: 150,
+      imgHeight: 150
+    },
+    {
       name: 'JavaScript Animations',
       img: 'js-animations-grasshopper.png',
       imgWidth: 150,
