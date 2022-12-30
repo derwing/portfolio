@@ -26,6 +26,7 @@ export class RecomendationsComponent implements OnInit {
       company: 'www.rapidratings.com',
       companyLogo: "rapidratings_logo.png",
       img: 'mariale.png',
+      img2: 'mariale-no-bg.png',
       review: 'Derwing and I were part of the team that worked for an important client. He was responsible for maintaining the infrastructure and deploying all our releases; as a professional Derwing likes challenges and is always open to learn new things, that is how he even managed some aspects of our applications’ databases. Derwing understand how important is to manage a relationship with clients and also has a high standard when performing his job. I would recommend Derwing 100% and I know he will bring to any team he works with his knowledge, openness and desire to deliver excellence.',
       reviewExplain: 'xxxx',
       linkedin: 'https://www.linkedin.com/in/mariale-linares-r/'
@@ -36,7 +37,8 @@ export class RecomendationsComponent implements OnInit {
       charge: "Technical Staff - Colombia",
       company: 'www.VMware.com',
       companyLogo: 'vmware-logo.png',
-      img: 'juan-bustamante.png',
+      img: 'juan-bustamante2.jpeg',
+      img2: 'juan-bustamante-no-bg.png',
       review: "I've been working with Derwing for almost 15 years, he has an insatiable desire to learn, and he demonstrated this by improving his skills as a web developer, even though he came from an infrastructure background. His skills as an entrepreneur are also proven. For all this, Derwing is a valuable member of any IT team and you can only expect the best from him. Derwing’s personality is also impressive. He acts with generosity and compassion and is well-respected by his peers. He is a natural leader and was such a joy to have on my team.",
       linkedin: 'https://www.linkedin.com/in/juan-jos%C3%A9-bustamante-9475a03/'
     },
@@ -47,6 +49,7 @@ export class RecomendationsComponent implements OnInit {
       company: "www.intraway.com",
       companyLogo: 'iw-logo.svg',
       img: 'javier-malaguera.png',
+      img2: 'javier-malaguera-no-bg.png',
       review: 'Trabaje con Derwing en la Universidad Marítima y posteriormente en dbaccess, es un excelente compañero de trabajo que está dispuesto a colaborar y hacer su parte para avanzar y sacar adelante cualquier proyecto. Siempre ha destacado por su capacidad técnica, de resolución de problemas, gerencia y su calidad humana.',
       linkedin: 'https://www.linkedin.com/in/javier-m-34001baa/'
     },
@@ -57,6 +60,7 @@ export class RecomendationsComponent implements OnInit {
       company: "www.google.com",
       companyLogo: 'google-logo.png',
       img: 'fernanda-melo.jpg',
+      img2: 'fernanda-melo-no-bg.png',
       review: "I’ve had the pleasure of working with Derwing in DBAccess for around 5 years. I was starting my career at that time and Derwing was a great mentor in the Infrastructure area. He was always willing to help and share his expertise with others. I remember we had multiple challenges with one of the biggest customers we were supporting but having Derwing in the team made us feel supported and motivated. His empathy and humbleness fostered a comforting work environment. I highly recommend working with Derwing, I’m very grateful to have worked with him.",
       linkedin: 'https://www.linkedin.com/in/fernanda-melo-89a5343/'
     }

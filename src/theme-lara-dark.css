@@ -1,2 +1,41 @@
 @import "primeng/resources/themes/lara-dark-teal/theme.css";
 @import "theme-customizations.css";
+
+/* Recomendation photo animations */
+
+:root {
+    --viva-magenta: var(--cyan-500);
+    --viva-purple: #dbda8f;
+}
+
+@property --a {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 90deg;
+}
+
+.gradient {
+    --size: 4.5rem;
+    width: var(--size);
+    height: var(--size);
+    padding: 0.25rem;
+    border-radius: 50%;
+    background: linear-gradient(var(--a), var(--viva-magenta), var(--viva-purple));
+    animation: animation 2s linear infinite;
+    margin-top: -26px
+}
+
+.gradient img {
+    width: 100%;
+    border-radius: 50%;
+    border: 0.5rem solid var(--bg);
+}
+
+@keyframes animation {
+    from {
+        --a: 0deg;
+    }
+    to {
+        --a: 360deg;
+    }
+}

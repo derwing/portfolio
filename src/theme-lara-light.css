@@ -4,8 +4,8 @@
 /* Recomendation photo animations */
 
 :root {
-    --viva-magenta: #0000FF;
-    --viva-purple: #d3e1f3;
+    --viva-magenta: var(--cyan-500);
+    --viva-purple: #dbda8f;
 }
 
 @property --a {
@@ -15,18 +15,14 @@
 }
 
 .gradient {
-    --size: 12rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    --size: 4.5rem;
     width: var(--size);
     height: var(--size);
-    padding: 0.9rem;
+    padding: 0.25rem;
     border-radius: 50%;
     background: linear-gradient(var(--a), var(--viva-magenta), var(--viva-purple));
-    animation: animation 15s ease infinite;
-    background-size: 200% 200%;
+    animation: animation 2s linear infinite;
+    margin-top: -26px
 }
 
 .gradient img {
@@ -37,9 +33,9 @@
 
 @keyframes animation {
     from {
-        --a: 20deg;
+        --a: 0deg;
     }
     to {
-        --a: 300deg;
+        --a: 360deg;
     }
 }

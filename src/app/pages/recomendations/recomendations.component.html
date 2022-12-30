@@ -4,7 +4,10 @@
             <ng-template let-recomendation pTemplate="item">
                 <p-card [style]="{'min-height.px': 160}" styleClass="shadow-3 p-1 m-4" (click)="openRecomendation(recomendation)">
                     <p-header class="recomendation-header-img pointer">
-                        <p-avatar [image]="'../../../assets/images/recomendations/' + recomendation.img" shape="circle" class="avatar" size="xlarge"></p-avatar>
+                        <div class="gradient">
+                            <p-avatar [image]="'../../../assets/images/recomendations/' + recomendation.img" shape="circle" class="avatar gradient-img" size="xlarge"></p-avatar>
+
+                        </div>
                     </p-header>
                     <p class="text-blue-700 avatar-name mb-0">{{recomendation.name}} <img [src]="'../../../assets/images/recomendations/' + recomendation.companyLogo" [alt]="recomendation.company" width="80px" maxheight="25px"></p>
                     <small class="avatar-charge text-color-secondary">{{recomendation.charge}}</small>
@@ -22,8 +25,8 @@
                 </h2>
             </header>
             <div class="grid">
-                <div class="col border-round text-center hidden-xs-down gradient">
-                    <img [src]="'../../../assets/images/recomendations/' + recomendationImg" class="border-round  gradient-img">
+                <div class="col border-round text-center hidden-xs-down">
+                    <img [src]="'../../../assets/images/recomendations/' + recomendationImg" class="border-round review-img-big">
                 </div>
                 <div class="col-12 md:col-8 lg:col-8">
                     <p class="review-text mt-1 text-left">{{recomendationReview}}</p>
