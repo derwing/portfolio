@@ -1,8 +1,8 @@
 <p-menubar [model]="items" class="noBorder animate__animated animate__fadeIn animate__slower" id="menu" [hidden]="!showMenu">
     <ng-template pTemplate="start">
         <!-- TODO: Change this icon with a photo cartoon of me -->
-        <img *ngIf="!darkModeStatus" src="../../../assets/images/derwingLogoLightGrey.png" height="40" class="logo mr-2" alt="Web page logo">
-        <img *ngIf="darkModeStatus" src="../../../assets/images/derwingLogoTransparent.png" height="40" class="logo mr-2" alt="Web page logo">
+        <img *ngIf="!darkModeStatus" src="../../../assets/images/derwingLogoLightGrey.png" height="40" class="logo mr-2" alt="Web page logo" title="this logo was made by an IA">
+        <img *ngIf="darkModeStatus" src="../../../assets/images/derwingLogoBW.png" height="40" class="logo mr-2" alt="Web page logo" title="this logo was made by an IA">
     </ng-template>
     <!-- Desktop buttons -->
     <a pButton type="button" href="https://wa.me/+573208676721?text=Hello%20From%20the%20Website" target="_blank" class="whatsapp-btn hidden-xs-down">{{'navbar.lets-talk' | translate | titlecase }} <i class="ml-1 pi pi-whatsapp"></i></a>
