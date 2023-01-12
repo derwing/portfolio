@@ -19,7 +19,8 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       img: 'AidPassWeb.png',
       imgWidth: 150,
       imgHeight: 100,
-      link: "https://www.aidpass.com"
+      link: "https://www.aidpass.com",
+      title: "WebApp Using Angular + Material Desing"
     },
     {
       name: "AidPass Alert",
@@ -27,7 +28,8 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       img: 'aidPass-alert.jpeg',
       imgWidth: 150,
       imgHeight: 100,
-      link: "https://play.google.com/store/apps/details?id=com.aidpass.alertapp&pli=1"
+      link: "https://play.google.com/store/apps/,details?id=com.aidpass.alertapp&pli=1",
+      title: "Mobile APP using Ionic"
     },
     {
       name: "First Responder",
@@ -35,7 +37,8 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       img: 'firstresponder-ios.jpg',
       imgWidth: 150,
       imgHeight: 100,
-      link: "https://play.google.com/store/apps/details?id=app.aidpass.firstresponder"
+      link: "https://play.google.com/store/apps/,details?id=app.aidpass.firstresponder",
+      title: "Mobile APP using Ionic"
     },
     {
       name: "UlaLovers IONIC",
@@ -43,7 +46,8 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       img: 'ulalovers.png',
       imgWidth: 150,
       imgHeight: 100,
-      link: "https://ulalovers.com/tabs/hometab"
+      link: "https://ulalovers.com/tabs/hometab",
+      title: "WebApp Using Ionic + Rest Api"
     },
     {
       name: "Rómulo Betancourt",
@@ -51,23 +55,17 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       img: 'romulobetancourt.png',
       imgWidth: 150,
       imgHeight: 100,
-      link: "https://www.romulobetancourt.edu.ve"
+      link: "https://www.romulobetancourt.edu.ve",
+      title: "Web using Wordpress"
     },
     {
-      name: "AidPass Alert",
-      icon: PrimeIcons.APPLE,
-      img: 'aidPass-alert.jpeg',
+      name: "GiftApp",
+      icon: PrimeIcons.GLOBE,
+      img: 'gift-app.png',
       imgWidth: 150,
       imgHeight: 100,
-      link: "https://apps.apple.com/br/app/aidpass-alert/id1628644066"
-    },
-    {
-      name: "First Responder",
-      icon: PrimeIcons.ANDROID,
-      img: 'firstresponder.jpeg',
-      imgWidth: 150,
-      imgHeight: 100,
-      link: "https://play.google.com/store/apps/details?id=app.aidpass.firstresponder"
+      link: "https://dm-gift-app.netlify.app/",
+      title: "WebApp Using Angular + Rest Api"
     },
 
   ];

@@ -15,7 +15,9 @@
                         <p-header>
                             <span [ngClass]="{'text-white': darkMode, 'text-blue-700': !darkMode}">{{project.name}} <i [ngClass]="project.icon"></i> </span>
                         </p-header>
-                        <img [src]="'../../../assets/images/projects/' + project.img" class="company-logo border-round p-1 shadow-4 mt-2" [height]="project.imgHeight">
+                        <img [src]="'../../../assets/images/projects/' + project.img" class="company-logo border-round p-1 shadow-4 mt-2" [height]="project.imgHeight" [title]="project.title">
+                        <br>
+                        <small>{{project.title | titlecase }}</small>
                     </p-card>
                 </a>
             </ng-template>
