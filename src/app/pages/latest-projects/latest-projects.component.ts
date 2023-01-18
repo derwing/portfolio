@@ -68,6 +68,15 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       title: "WebApp Using Angular + Rest Api"
     },
     {
+      name: "Angular Pipes",
+      icon: PrimeIcons.GLOBE,
+      img: 'angular-pipes.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://angular13-pipes.netlify.app/",
+      title: "WebApp Using Angular + PrimeNg"
+    },
+    {
       name: "Angular Bases",
       icon: PrimeIcons.GLOBE,
       img: 'angular-bases.png',
@@ -75,7 +84,8 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgHeight: 100,
       link: "https://angular-example.netlify.app/",
       title: "WebApp Using Angular"
-    }
+    },
+
 
   ];
 
