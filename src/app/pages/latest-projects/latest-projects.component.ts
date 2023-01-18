@@ -41,6 +41,15 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       title: "Mobile APP using Ionic"
     },
     {
+      name: "QR Component FrontEndMentor",
+      icon: PrimeIcons.GLOBE,
+      img: 'fm-task1.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://fm-qr-code-component-derwing.netlify.app/",
+      title: "Responsive Web HTML + Tailwind"
+    },
+    {
       name: "UlaLovers IONIC",
       icon: PrimeIcons.GLOBE,
       img: 'ulalovers.png',
@@ -85,7 +94,6 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       link: "https://angular-example.netlify.app/",
       title: "WebApp Using Angular"
     },
-
 
   ];
 
