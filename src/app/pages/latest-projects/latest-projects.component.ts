@@ -67,6 +67,15 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       link: "https://dm-gift-app.netlify.app/",
       title: "WebApp Using Angular + Rest Api"
     },
+    {
+      name: "Angular Bases",
+      icon: PrimeIcons.GLOBE,
+      img: 'angular-bases.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://angular-example.netlify.app/",
+      title: "WebApp Using Angular"
+    }
 
   ];
 
