@@ -41,6 +41,33 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       title: "Mobile APP using Ionic"
     },
     {
+      name: "Rest Api Countries FrontEndM",
+      icon: PrimeIcons.GLOBE,
+      img: 'fm-task4.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://fm-rest-country-api.netlify.app/home",
+      title: "Angular + primeNG + primeFlex"
+    },
+    {
+      name: "MultiStep Form FrontEndM",
+      icon: PrimeIcons.GLOBE,
+      img: 'fm-task3.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://fm-multi-step-form.netlify.app/",
+      title: "Angular + Material + Bootstrap"
+    },
+    {
+      name: "Notification FrontEndMentor",
+      icon: PrimeIcons.GLOBE,
+      img: 'fm-task2.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://fm-notifications-page.netlify.app/",
+      title: "Angular + Bootstrap"
+    },
+    {
       name: "QR Component FrontEndMentor",
       icon: PrimeIcons.GLOBE,
       img: 'fm-task1.png',
