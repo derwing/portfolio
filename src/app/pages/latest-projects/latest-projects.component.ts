@@ -29,7 +29,16 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://play.google.com/store/apps/,details?id=com.aidpass.alertapp&pli=1",
-      title: "Mobile APP using Ionic"
+      title: "Mobile APP using Flutter"
+    },
+    {
+      name: "AidPass Alert for Watch",
+      icon: PrimeIcons.ANDROID,
+      img: 'aidpass_alert_Watch.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://play.google.com/store/apps/,details?id=com.aidpass.alertapp&pli=1",
+      title: "Mobile APP using Flutter"
     },
     {
       name: "First Responder",
