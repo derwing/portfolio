@@ -14,6 +14,15 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
   // Last Work 
   lastProjects = [
     {
+      name: "LAES",
+      icon: PrimeIcons.GLOBE,
+      img: 'laes-website.jpg',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://laes.netlify.app",
+      title: "WebApp Using Angular + TailwindCSS + NgRx"
+    },
+    {
       name: "AidPass",
       icon: PrimeIcons.GLOBE,
       img: 'AidPassWeb.png',
