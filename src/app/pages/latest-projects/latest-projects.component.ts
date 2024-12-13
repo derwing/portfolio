@@ -1,3 +1,4 @@
+import { Inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ThemeService } from './../../services/theme.service';
 import { PrimeIcons } from 'primeng/api';
@@ -20,7 +21,16 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://laes.netlify.app",
-      title: "WebApp Using Angular + TailwindCSS + NgRx"
+      title: "WebApp Angular18 + TailwindCSS + NgRx",
+    },
+    {
+      name: "Consentimiento Informado",
+      icon: PrimeIcons.GLOBE,
+      img: 'consentimiento-informado.jpg',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://consentimientoinformado.com.co",
+      title: "WebApp Angular18 + PrimeNg18 + Firebase"
     },
     {
       name: "AidPass",
@@ -29,7 +39,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://www.aidpass.com",
-      title: "WebApp Using Angular + Material Desing"
+      title: "WebApp Angular + Material Desing"
     },
     {
       name: "AidPass Alert",
@@ -38,7 +48,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://play.google.com/store/apps/,details?id=com.aidpass.alertapp&pli=1",
-      title: "Mobile APP using Flutter"
+      title: "Mobile APP Flutter"
     },
     {
       name: "AidPass Alert for Watch",
@@ -47,7 +57,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://play.google.com/store/apps/,details?id=com.aidpass.alertapp&pli=1",
-      title: "Mobile APP using Flutter"
+      title: "Mobile APP Flutter"
     },
     {
       name: "First Responder",
@@ -56,7 +66,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://play.google.com/store/apps/,details?id=app.aidpass.firstresponder",
-      title: "Mobile APP using Ionic"
+      title: "Mobile APP Ionic"
     },
     {
       name: "Rest Api Countries FrontEndM",
@@ -101,7 +111,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://ulalovers.com/tabs/hometab",
-      title: "WebApp Using Ionic + Rest Api"
+      title: "WebApp Ionic + Rest Api"
     },
     {
       name: "Rómulo Betancourt",
@@ -110,7 +120,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://www.romulobetancourt.edu.ve",
-      title: "Web using Wordpress"
+      title: "Web Wordpress"
     },
     {
       name: "GiftApp",
@@ -119,7 +129,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://dm-gift-app.netlify.app/",
-      title: "WebApp Using Angular + Rest Api"
+      title: "WebApp Angular + Rest Api"
     },
     {
       name: "Angular Pipes",
@@ -128,7 +138,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://angular13-pipes.netlify.app/",
-      title: "WebApp Using Angular + PrimeNg"
+      title: "WebApp Angular + PrimeNg"
     },
     {
       name: "Angular Bases",
@@ -137,7 +147,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
       imgWidth: 150,
       imgHeight: 100,
       link: "https://angular-example.netlify.app/",
-      title: "WebApp Using Angular"
+      title: "WebApp Angular"
     },
 
   ];
@@ -147,7 +157,7 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
 
   constructor(
     private ThemeService: ThemeService,
-    private translate: TranslateService
+    @Inject(TranslateService) private translate: TranslateService
   ) {
     this.responsiveOptions = this.ThemeService.responsiveOptions;
   }
