@@ -13,7 +13,6 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
   darkMode: boolean = false;
   lang: string = 'en';
   // Last Work
-  // Minor fix for the last projects
   lastProjects = [
     {
       name: "LAES",
