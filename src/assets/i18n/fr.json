@@ -25,6 +25,13 @@
             "most-important": "lePlusImportant:",
             "family": "Famille",
             "call-method": "// Invoquer la fonction d'objectif de vie."
+        },
+        "presentation": "Je suis un développeur de logiciels avec plus de 20 ans d'expérience dans le monde de l'IT. J'ai une passion pour la technologie et un engagement envers l'apprentissage continu. Je suis toujours à la recherche de nouveaux défis, j'aime résoudre des problèmes et chercher de nouvelles idées pour améliorer mon travail.",
+        "presentations": {
+            "title": "Présentations",
+            "subtitle": "Dans cette section, vous pouvez voir certaines de mes présentations.",
+            "iesa-presentation": "Présentation IESA",
+            "cuidatos-presentation": "Présentation Cuidatos en TV"
         }
     },
     "section2": {

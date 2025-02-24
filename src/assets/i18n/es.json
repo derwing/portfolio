@@ -25,6 +25,13 @@
             "most-important": "loMásImportante:",
             "family": "Familia",
             "call-method": "// Invocar la función proposito de vida."
+        },
+        "presentation": "Soy desarrollador de software con más de 20 años de experiencia en el mundo TI. Tengo pasión por la tecnología y compromiso con el aprendizaje continuo. Siempre estoy buscando nuevos desafíos me encanta solucionar problemas y buscar nuevas ideas para mejorar mi trabajo.",
+        "presentations": {
+            "title": "Presentaciones",
+            "subtitle": "En esta sección puedes ver algunas de mis presentaciones.",
+            "iesa-presentation": "Presentación IESA",
+            "cuidatos-presentation": "Presentación Cuidatos en TV"
         }
     },
     "section2": {

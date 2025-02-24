@@ -15,6 +15,15 @@ export class LatestProjectsComponent implements OnInit, DoCheck {
   // Last Work
   lastProjects = [
     {
+      name: 'Finanzas con AI',
+      icon: PrimeIcons.MONEY_BILL,
+      img: 'calculadora-financiera.png',
+      imgWidth: 150,
+      imgHeight: 100,
+      link: "https://cuotas-tc.netlify.app/",
+      title: "WebApp Angular18 + AI + PrimeNg + TailwindCSS"
+    },
+    {
       name: "LAES",
       icon: PrimeIcons.GLOBE,
       img: 'laes-website.jpg',
